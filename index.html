@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <!-- MENU LATÉRAL -->
+  <aside class="sidebar">
+    <h1>Alpha DIALLO</h1>
     <nav>
-      <h1>Portfolio - Alpha DIALLO</h1>
       <ul>
         <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#bts">BTS SIO</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#experiences">Expériences</a></li>
         <li><a href="#projets">Projets</a></li>
@@ -20,190 +23,215 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
 
-  <!-- Section Accueil -->
-  <section id="accueil" class="accueil">
-    <div class="presentation">
-      <div class="texte">
-        <h2>Bienvenue !</h2>
-        <p>
-          Bonjour, moi c'est <strong>Alpha DIALLO</strong> 👋<br>
-          Je suis étudiant en <strong>BTS SIO</strong> (Services Informatiques aux Organisations). <br> 
-          Passionné d’informatique, je m’intéresse particulièrement à la <strong>cybersécurité</strong> et aux <strong>réseaux</strong>.
-        </p>
+    <div class="toggle-container">
+      <span>🌙</span>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+      <span>☀️</span>
+    </div>
+  </aside>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main>
+    <!-- Section Accueil -->
+    <section id="accueil" class="accueil">
+      <div class="presentation">
+        <div class="texte">
+          <h2>Bienvenue !</h2>
+          <p>
+            Bonjour, moi c'est <strong>Alpha DIALLO</strong> 👋<br>
+            Étudiant en <strong>BTS SIO</strong> (Services Informatiques aux Organisations). <br> 
+            Passionné par la <strong>cybersécurité</strong> et le <strong>réseau</strong>.
+          </p>
+        </div>
+        <div class="photo">
+          <img src="photo.jpg" alt="Photo de Alpha DIALLO">
+        </div>
       </div>
-      <div class="photo">
-        <img src="photo.jpg" alt="Photo de Alpha DIALLO">
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="apropos">
+      <h2>À propos de moi</h2>
+      <p class="intro">
+        Étudiant passionné par l’informatique, je développe mes compétences dans le domaine du réseau et de la cybersécurité en tant qu'apprenti administrateur réseau.
+        J’aime apprendre, expérimenter et relever de nouveaux défis techniques.
+      </p>
+
+      <div class="competences">
+        <div class="bloc">
+          <h3>💻 Compétences Techniques</h3>
+          <ul>
+            <li>Administration réseau (Windows / Linux)</li>
+            <li>Virtualisation (Proxmox, VMware, VirtualBox)</li>
+            <li>Cybersécurité (analyse de vulnérabilités, veille sécurité)</li>
+            <li>Bases de données (MySQL, SQL Server)</li>
+          </ul>
+        </div>
+
+        <div class="bloc">
+          <h3>🤝 Soft Skills</h3>
+          <ul>
+            <li>Travail d’équipe et communication</li>
+            <li>Adaptabilité et autonomie</li>
+            <li>Esprit d’analyse et de résolution de problèmes</li>
+            <li>Rigueur et organisation</li>
+            <li>Curiosité et apprentissage continu</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Section À propos -->
-<section id="apropos" class="apropos">
-  <h2>À propos de moi</h2>
-  <p class="intro">
-    Étudiant passionné par l’informatique, je développe mes compétences dans le domaine du réseau, de la cybersécurité et du développement web.
-    J’aime apprendre, expérimenter et relever de nouveaux défis techniques.
-  </p>
+    <!-- Section BTS SIO -->
+    <section id="bts" class="bts">
+      <h2>BTS SIO</h2>
+      <p class="intro">
+        Le <strong>BTS Services Informatiques aux Organisations (SIO)</strong> forme des techniciens capables de répondre aux besoins informatiques des entreprises. 
+        Il propose deux spécialisations :
+      </p>
 
-  <div class="competences">
-    <div class="bloc">
-      <h3>💻 Compétences Techniques</h3>
-      <ul>
-        <li>Administration réseau (Windows / Linux)</li>
-        <li>Virtualisation (Proxmox, VMware, VirtualBox)</li>
-        <li>Cybersécurité (analyse de vulnérabilités, veille sécurité)</li>
-        <li>Développement web (HTML, CSS, JavaScript, PHP)</li>
-        <li>Bases de données (MySQL, SQL Server)</li>
-      </ul>
-    </div>
+      <div class="bts-container">
+        <div class="bts-card">
+          <h3>🛡️ SISR - Solutions d’Infrastructure, Systèmes et Réseaux</h3>
+          <p>
+            Cette spécialité forme les futurs administrateurs réseau et techniciens systèmes.  
+            Les étudiants y apprennent à installer, configurer, sécuriser et maintenir les infrastructures informatiques d’une organisation.
+          </p>
+          <ul>
+            <li>Gestion de serveurs Windows / Linux</li>
+            <li>Virtualisation et supervision</li>
+            <li>Cybersécurité et protection du réseau</li>
+          </ul>
+        </div>
 
-    <div class="bloc">
-      <h3>🤝 Soft Skills</h3>
-      <ul>
-        <li>Travail d’équipe et communication</li>
-        <li>Adaptabilité et autonomie</li>
-        <li>Esprit d’analyse et de résolution de problèmes</li>
-        <li>Rigueur et organisation</li>
-        <li>Curiosité et apprentissage continu</li>
-      </ul>
-    </div>
-  </div>
-</section>
+        <div class="bts-card">
+          <h3>💻 SLAM - Solutions Logicielles et Applications Métiers</h3>
+          <p>
+            Cette spécialité est orientée vers le développement d’applications et la sécurité logicielle.  
+            Elle forme des développeurs capables de créer des solutions adaptées aux besoins métiers des entreprises.
+          </p>
+          <ul>
+            <li>Développement web et mobile</li>
+            <li>Gestion de bases de données</li>
+            <li>Cybersécurité applicative</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <!-- Section CV -->
-  <section id="cv">
-    <h2>Mon CV</h2>
-    <p>Voici mon CV que vous pouvez télécharger ci-dessous :</p>
-    <a href="testCV.pdf" target="_blank" class="btn">Télécharger mon CV</a>
-  </section>
+    <!-- Section CV -->
+    <section id="cv">
+      <h2>Mon CV</h2>
+      <p>Voici mon CV que vous pouvez télécharger ci-dessous :</p>
+      <a href="testCV.pdf" target="_blank" class="btn">Télécharger mon CV</a>
+    </section>
 
-  <!-- Section Expériences -->
-  <section id="experiences">
-    <h2>Mes Expériences</h2>
-    <div class="experience">
-      <h3>Alternance – Technicien Systèmes & Réseaux</h3>
-      <p><strong>Entreprise :</strong> (à compléter)</p>
-      <p><strong>Période :</strong> Septembre 2025 – Aujourd’hui</p>
-      <p><strong>Description :</strong> Participation à la maintenance du réseau interne, gestion des postes utilisateurs, et initiation à la cybersécurité (analyse de vulnérabilités, mise à jour de serveurs, etc.).</p>
-    </div>
+    <!-- Section Expériences -->
+    <section id="experiences">
+      <h2>Mes Expériences</h2>
+      <div class="experience">
+        <h3>Alternance – Administrateur Systèmes & Réseaux</h3>
+        <p><strong>Entreprise :</strong> Centre François Baclesse</p>
+        <p><strong>Période :</strong> Septembre 2025 – Aujourd’hui</p>
+        <p><strong>Description :</strong> Maintenance du réseau interne, gestion des postes utilisateurs, et initiation à la cybersécurité (analyse de vulnérabilités, mise à jour de serveurs, etc.).</p>
+      </div>
 
-    <div class="experience">
-      <h3>Stage – Assistant Informatique</h3>
-      <p><strong>Entreprise :</strong> (à compléter)</p>
-      <p><strong>Période :</strong> Mai – Juin 2025</p>
-      <p><strong>Description :</strong> Installation de logiciels, dépannage utilisateur, et découverte de la gestion d’un parc informatique.</p>
-    </div>
-  </section>
+      <div class="experience">
+        <h3>Stage – Dévellopeur Web</h3>
+        <p><strong>Entreprise :</strong> Boucherie Niamat'Allah</p>
+        <p><strong>Période :</strong> Mai – Juillet 2025</p>
+        <p><strong>Description :</strong> Création d'un site web pour l'entreprise ainsi qu'une boutique en ligne.</p>
+      </div>
+    </section>
 
-  <!-- Section Projets -->
-<section id="projets">
-  <h2>Mes Projets</h2>
-  <p>Voici une sélection de mes projets réalisés durant mon BTS SIO :</p>
+    <!-- Section Projets -->
+    <section id="projets">
+      <h2>Mes Projets</h2>
+      <p>Voici une sélection de mes projets réalisés durant mon BTS SIO :</p>
 
-  <div class="projets">
-    <div class="card" onclick="toggleCard(this)">
-      <h3>Projet 1</h3>
-      <p>Courte description du projet 1.</p>
-    </div>
+      <div class="projets">
+        <div class="card" onclick="toggleCard(this)">
+          <h3>Projet 1 (GLPI)</h3>
+          <p>Courte description du projet 1.</p>
+        </div>
 
-    <div class="card" onclick="toggleCard(this)">
-      <h3>Projet 2</h3>
-      <p>Courte description du projet 2.</p>
-    </div>
+        <div class="card" onclick="toggleCard(this)">
+          <h3>Projet 2 (AD)</h3>
+          <p>Courte description du projet 2.</p>
+        </div>
 
-    <div class="card" onclick="toggleCard(this)">
-      <h3>Projet 3</h3>
-      <p>Courte description du projet 3.</p>
-    </div>
+    
+      </div>
+    </section>
 
-    <!-- Ajoute plus de projets si nécessaire -->
-  </div>
-</section>
-      <!-- Tu pourras ajouter ici des cartes de projets -->
-    </div>
-  </section>
+    <!-- Section Veille Technologique -->
+    <section id="veille" class="veille">
+      <h2>Veille Technologique</h2>
+      <p class="intro">
+        Ma veille technologique porte principalement sur la cybersécurité, notamment sur les nouvelles menaces,
+        les solutions de défense innovantes et les technologies émergentes liées au réseau et à la sécurité informatique.
+      </p>
 
-  <!-- Section Veille Technologique -->
-<section id="veille" class="veille">
-  <h2>Veille Technologique</h2>
-  <p class="intro">
-    Ma veille technologique porte principalement sur la cybersécurité, notamment sur les nouvelles menaces,
-    les solutions de défense innovantes et les technologies émergentes liées au réseau et à la sécurité informatique.
-  </p>
+      <div class="veille-container">
+        <div class="veille-card">
+          <h3>🧠 Thème Principal</h3>
+          <p>Cybersécurité et protection des données : suivi des actualités, des failles de sécurité majeures et des innovations dans le domaine.</p>
+        </div>
 
-  <div class="veille-container">
-    <div class="veille-card">
-      <h3>🧠 Thème Principal</h3>
-      <p>Cybersécurité et protection des données : suivi des actualités, des failles de sécurité majeures et des innovations dans le domaine.</p>
-    </div>
+        <div class="veille-card">
+          <h3>🔍 Outils de Veille</h3>
+          <ul>
+            <li>Twitter (X) – comptes spécialisés en sécurité</li>
+            <li>Reddit – r/cybersecurity, r/netsec</li>
+            <li>Sites : ZATAZ, TheHackerNews, CERT-FR</li>
+            <li>Flux RSS & alertes Google</li>
+          </ul>
+        </div>
 
-    <div class="veille-card">
-      <h3>🔍 Outils de Veille</h3>
-      <ul>
-        <li>Twitter (X) – comptes spécialisés en sécurité</li>
-        <li>Reddit – r/cybersecurity, r/netsec</li>
-        <li>Sites : ZATAZ, TheHackerNews, CERT-FR</li>
-        <li>Flux RSS & alertes Google</li>
-      </ul>
-    </div>
+        <div class="veille-card">
+          <h3>📅 Sujets Récents</h3>
+          <ul>
+            <li>Évolution des ransomwares et IA dans la cybersécurité</li>
+            <li>Attaques DDoS de nouvelle génération</li>
+            <li>Amélioration des protocoles de chiffrement</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <div class="veille-card">
-      <h3>📅 Sujets Récents</h3>
-      <ul>
-        <li>Évolution des ransomwares et IA dans la cybersécurité</li>
-        <li>Attaques DDoS de nouvelle génération</li>
-        <li>Amélioration des protocoles de chiffrement</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <!-- Section Tableau de Synthèse -->
+    <section id="tableau">
+      <h2>Tableau de Synthèse</h2>
+      <p>Tu pourras insérer ton tableau de compétences ici (image ou tableau HTML).</p>
+    </section>
 
-  <!-- Section Tableau de synthèse -->
-  <section id="tableau">
-    <h2>Tableau de Synthèse</h2>
-    <p>Tu pourras insérer ton tableau de compétences ici (image ou tableau HTML).</p>
-  </section>
+    <!-- Section Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
 
- <section id="contact">
-  <h2>Contact</h2>
-  
-  <!-- Formulaire classique -->
-  <form action="#" method="post">
-    <label>Nom :</label>
-    <input type="text" name="nom" required>
+      <form action="#" method="post">
+        <label>Nom :</label>
+        <input type="text" name="nom" required>
 
-    <label>Email :</label>
-    <input type="email" name="email" required>
+        <label>Email :</label>
+        <input type="email" name="email" required>
 
-    <label>Message :</label>
-    <textarea name="message" rows="5" required></textarea>
+        <label>Message :</label>
+        <textarea name="message" rows="5" required></textarea>
 
-    <button type="submit">Envoyer</button>
-  </form>
+        <button type="submit">Envoyer</button>
+      </form>
 
-  <!-- Liens email et LinkedIn avec icônes -->
-  <div class="contact-links" style="margin-top: 2rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-    <a href="mailto:alpha.dllo2004@gmail.com" class="btn contact-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M0 4a2 2 0 012-2h12a2 2 0 012 2v.217l-8 4.8-8-4.8V4z"/>
-        <path d="M0 5.383V12a2 2 0 002 2h12a2 2 0 002-2V5.383l-8 4.8-8-4.8z"/>
-      </svg>
-      Email
-    </a>
+      <div class="contact-links" style="margin-top: 2rem; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="mailto:alpha.dllo2004@gmail.com" class="btn contact-btn">Email</a>
+        <a href="https://www.linkedin.com/in/alpha-diallo-59a27a305/" target="_blank" class="btn contact-btn">LinkedIn</a>
+      </div>
+    </section>
 
-    <a href="https://www.linkedin.com/in/alpha-diallo-59a27a305/" target="_blank" class="btn contact-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.254c.837 0 1.357-.554 1.357-1.246-.015-.71-.52-1.245-1.342-1.245-.822 0-1.357.535-1.357 1.245 0 .692.52 1.246 1.327 1.246h.015zm4.908 8.254V9.359c0-.21.015-.42.077-.568.168-.42.55-.855 1.193-.855.842 0 1.178.644 1.178 1.587v3.434h2.4V9.156c0-2.288-1.217-3.352-2.844-3.352-1.315 0-1.907.73-2.235 1.242h.015v-1.065H6.451c.03.693 0 7.225 0 7.225h2.4z"/>
-      </svg>
-      LinkedIn
-    </a>
-  </div>
-</section>
-
-  <footer>
-    <p>© 2025 - Portfolio d’Alpha DIALLO | BTS SIO</p>
-  </footer>
-</body>
-</html>
+    <footer>
+      <p>© 2025 - Portfolio d’Alpha DIALLO | BTS SIO</p>
+    </footer>
+ 
