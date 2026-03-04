@@ -57,7 +57,8 @@
     <section id="apropos" class="apropos">
       <h2>À propos de moi</h2>
       <p class="intro">
-        Étudiant passionné par l’informatique, je développe mes compétences dans le domaine du réseau et de la cybersécurité en tant qu'apprenti administrateur réseau. <br>J’aime apprendre, expérimenter et relever de nouveaux défis techniques.
+        Étudiant passionné par l’informatique, je développe mes compétences dans le domaine du réseau et de la cybersécurité en tant qu'apprenti administrateur réseau.
+        J’aime apprendre, expérimenter et relever de nouveaux défis techniques.
       </p>
 
       <div class="competences">
@@ -67,7 +68,7 @@
             <li>Administration réseau (Windows / Linux)</li>
             <li>Virtualisation (Proxmox, VMware, VirtualBox)</li>
             <li>Cybersécurité (analyse de vulnérabilités, veille sécurité)</li>
-            <li>Bases de données (MySQL, SQL Server)</li>
+            <li>Gestion de serveurs et de sauvegardes (VEEAM , Windows Server)</li>
           </ul>
         </div>
 
@@ -125,7 +126,7 @@
     <section id="cv">
       <h2>Mon CV</h2>
       <p>Voici mon CV que vous pouvez télécharger ci-dessous :</p>
-      <a href="testCV.pdf" target="_blank" class="btn">Télécharger mon CV</a>
+      <a href="CV 2026.pdf" target="_blank" class="btn">Télécharger mon CV</a>
     </section>
 
     <!-- Section Expériences -->
@@ -146,25 +147,102 @@
       </div>
     </section>
 
-    <!-- Section Projets -->
-    <section id="projets">
-      <h2>Mes Projets</h2>
-      <p>Voici une sélection de mes projets réalisés durant mon BTS SIO :</p>
+   <!-- Section Projets -->
+<section id="projets">
+  <h2>Mes Projets</h2>
+  <p>Voici une sélection de mes projets réalisés durant mon BTS SIO, avec un focus sur l'administration réseau et la gestion du parc informatique :</p>
 
-      <div class="projets">
-        <div class="card" onclick="toggleCard(this)">
-          <h3>Projet 1 (GLPI)</h3>
-          <p>Courte description du projet 1.</p>
-        </div>
+  <div class="projets">
+    <!-- Projet GLPI -->
+    <div class="card" 
+         onmouseenter="expandCard(this)" 
+         onmouseleave="shrinkCard(this)">
+      <h3>Projet GLPI</h3>
+      <p class="short">
+        Mise en place d'une solution de gestion du parc informatique sur un serveur local.
+      </p>
+      <p class="long">
+        Lors de ce projet, j'ai configuré GLPI sur mon serveur local pour gérer l’ensemble du parc informatique de l'entreprise. Les points principaux réalisés sont : 
+        <ul>
+          <li>Installation de GLPI lié à mon serveur local et connexion à l'Active Directory.</li>
+          <li>Création des utilisateurs, groupes et attribution de rôles.</li>
+          <li>Suivi des incidents et des demandes à travers le système de tickets.</li>
+          <li>Gestion des licences, des équipements (PC, imprimantes, périphériques).</li>
+          <li>Élaboration de rapports et statistiques pour le suivi du parc et l’analyse des incidents.</li>
+          <li>Intégration dans le réseau global de l’entreprise et test dans mon espace personnel pour expérimenter et apprendre.</li>
+        </ul>
+        Ce projet m’a permis de comprendre comment un ITSM fonctionne, comment centraliser les informations d’un parc informatique et automatiser certaines tâches de gestion.
+      </p>
+    </div>
 
-        <div class="card" onclick="toggleCard(this)">
-          <h3>Projet 2 (AD)</h3>
-          <p>Courte description du projet 2.</p>
-        </div>
+    <!-- Projet Active Directory -->
+    <div class="card" 
+         onmouseenter="expandCard(this)" 
+         onmouseleave="shrinkCard(this)">
+      <h3>Projet Active Directory (AD)</h3>
+      <p class="short">
+        Gestion des utilisateurs, groupes, GPO et structure du domaine.
+      </p>
+      <p class="long">
+        Dans le cadre de ce projet, j'ai travaillé sur un serveur local pour administrer un domaine d’entreprise fictif. Les actions principales réalisées sont :
+        <ul>
+          <li>Création et gestion des utilisateurs, groupes et unités organisationnelles (OU).</li>
+          <li>Mise en place de stratégies de groupe (GPO) pour sécuriser les postes utilisateurs et standardiser le réseau.</li>
+          <li>Gestion des permissions sur fichiers et dossiers partagés au sein du réseau global de l’entreprise.</li>
+          <li>Organisation de la structure du domaine, avec un découpage réfléchi pour faciliter la gestion administrative.</li>
+          <li>Expérimentation dans mon espace personnel avant d’appliquer des changements sur le domaine global.</li>
+          <li>Test et intégration de GLPI avec l’Active Directory pour gérer les utilisateurs et incidents de manière centralisée.</li>
+        </ul>
+        Ce projet m’a permis d’acquérir une vision complète de l’administration réseau, de la sécurité des systèmes Windows et de l’interconnexion avec un outil ITSM.
+      </p>
+    </div>
 
-    
-      </div>
-    </section>
+  </div>
+</section>
+
+<style>
+.projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 1.5rem;
+}
+
+.projets .card {
+  background: rgba(255,255,255,0.05);
+  border: 2px solid var(--color-accent);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.projets .card .long {
+  display: none;
+  margin-top: 1rem;
+}
+
+.projets .card.active .long {
+  display: block;
+}
+
+.projets .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(168,85,247,0.3);
+}
+</style>
+
+<script>
+function expandCard(card) {
+  card.classList.add('active');
+}
+
+function shrinkCard(card) {
+  card.classList.remove('active');
+}
+</script>
 
     <!-- Section Veille Technologique -->
     <section id="veille" class="veille">
