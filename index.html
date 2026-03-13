@@ -129,120 +129,509 @@
       <a href="CV 2026.pdf" target="_blank" class="btn">Télécharger mon CV</a>
     </section>
 
-    <!-- Section Expériences -->
-    <section id="experiences">
-      <h2>Mes Expériences</h2>
-      <div class="experience">
-        <h3>Alternance – Administrateur Systèmes & Réseaux</h3>
-        <p><strong>Entreprise :</strong> Centre François Baclesse</p>
-        <p><strong>Période :</strong> Septembre 2025 – Aujourd’hui</p>
-        <p><strong>Description :</strong> Maintenance du réseau interne, gestion des postes utilisateurs, et initiation à la cybersécurité (analyse de vulnérabilités, mise à jour de serveurs, etc.).</p>
-      </div>
+  <!-- Section Expériences -->
+<section id="experiences">
 
-      <div class="experience">
-        <h3>Stage – Dévellopeur Web</h3>
-        <p><strong>Entreprise :</strong> Boucherie Niamat'Allah</p>
-        <p><strong>Période :</strong> Mai – Juillet 2025</p>
-        <p><strong>Description :</strong> Création d'un site web pour l'entreprise ainsi qu'une boutique en ligne.</p>
-      </div>
-    </section>
+  <h2 class="titre-projets">Mes Expériences</h2>
 
-   <!-- Section Projets -->
-<section id="projets">
-  <h2>Mes Projets</h2>
-  <p>Voici une sélection de mes projets réalisés durant mon BTS SIO, avec un focus sur l'administration réseau et la gestion du parc informatique :</p>
+  <p class="intro-projets">
+    Voici mes principales expériences professionnelles réalisées durant mon BTS SIO,
+    qui m'ont permis de développer mes compétences en administration système,
+    réseau et développement web.
+  </p>
 
   <div class="projets">
-    <!-- Projet GLPI -->
-    <div class="card" 
-         onmouseenter="expandCard(this)" 
-         onmouseleave="shrinkCard(this)">
-      <h3>Projet GLPI</h3>
+
+    <!-- Alternance -->
+    <div class="card" onclick="toggleCard(this)">
+
+      <h3>Alternance – Administrateur Systèmes & Réseaux</h3>
+
       <p class="short">
-        Mise en place d'une solution de gestion du parc informatique sur un serveur local.
+        Gestion du système informatique et support technique au Centre François Baclesse.
       </p>
-      <p class="long">
-        Lors de ce projet, j'ai configuré GLPI sur mon serveur local pour gérer l’ensemble du parc informatique de l'entreprise. Les points principaux réalisés sont : 
+
+      <div class="long">
+
+        <p>
+          Depuis septembre 2025, j’effectue mon alternance au sein du service informatique
+          du Centre François Baclesse, où je participe à l’administration du système
+          d’information et au support des utilisateurs.
+        </p>
+
         <ul>
-          <li>Installation de GLPI lié à mon serveur local et connexion à l'Active Directory.</li>
-          <li>Création des utilisateurs, groupes et attribution de rôles.</li>
-          <li>Suivi des incidents et des demandes à travers le système de tickets.</li>
-          <li>Gestion des licences, des équipements (PC, imprimantes, périphériques).</li>
-          <li>Élaboration de rapports et statistiques pour le suivi du parc et l’analyse des incidents.</li>
-          <li>Intégration dans le réseau global de l’entreprise et test dans mon espace personnel pour expérimenter et apprendre.</li>
+          <li>Support informatique auprès des utilisateurs.</li>
+          <li>Administration Active Directory et gestion des comptes.</li>
+          <li>Gestion du parc informatique via GLPI.</li>
+          <li>Participation à la migration VMware vers Nutanix.</li>
+          <li>Déploiement de bornes WiFi dans le centre.</li>
+          <li>Restauration de fichiers via les sauvegardes VEEAM.</li>
         </ul>
-        Ce projet m’a permis de comprendre comment un ITSM fonctionne, comment centraliser les informations d’un parc informatique et automatiser certaines tâches de gestion.
-      </p>
+
+        <p>
+          Cette alternance me permet d’acquérir une expérience concrète dans
+          l’administration système et réseau au sein d’une infrastructure
+          informatique professionnelle.
+        </p>
+
+        
+
+      </div>
     </div>
 
-    <!-- Projet Active Directory -->
-    <div class="card" 
-         onmouseenter="expandCard(this)" 
-         onmouseleave="shrinkCard(this)">
-      <h3>Projet Active Directory (AD)</h3>
+
+    <!-- Stage -->
+    <div class="card" onclick="toggleCard(this)">
+
+      <h3>Stage – Développeur Web</h3>
+
       <p class="short">
-        Gestion des utilisateurs, groupes, GPO et structure du domaine.
+        Création d’un site web et d’une boutique en ligne pour une entreprise.
       </p>
-      <p class="long">
-        Dans le cadre de ce projet, j'ai travaillé sur un serveur local pour administrer un domaine d’entreprise fictif. Les actions principales réalisées sont :
+
+      <div class="long">
+
+        <p>
+          Lors de mon stage à la Boucherie Niamat'Allah, j’ai développé un site internet
+          afin d’améliorer la visibilité de l’entreprise et faciliter la vente en ligne.
+        </p>
+
         <ul>
-          <li>Création et gestion des utilisateurs, groupes et unités organisationnelles (OU).</li>
-          <li>Mise en place de stratégies de groupe (GPO) pour sécuriser les postes utilisateurs et standardiser le réseau.</li>
-          <li>Gestion des permissions sur fichiers et dossiers partagés au sein du réseau global de l’entreprise.</li>
-          <li>Organisation de la structure du domaine, avec un découpage réfléchi pour faciliter la gestion administrative.</li>
-          <li>Expérimentation dans mon espace personnel avant d’appliquer des changements sur le domaine global.</li>
-          <li>Test et intégration de GLPI avec l’Active Directory pour gérer les utilisateurs et incidents de manière centralisée.</li>
+          <li>Création d’un site vitrine pour présenter l’entreprise.</li>
+          <li>Développement d’une boutique e-commerce.</li>
+          <li>Organisation des pages produits.</li>
+          <li>Optimisation du design et de la navigation.</li>
+          <li>Configuration des outils de gestion de la boutique.</li>
         </ul>
-        Ce projet m’a permis d’acquérir une vision complète de l’administration réseau, de la sécurité des systèmes Windows et de l’interconnexion avec un outil ITSM.
+
+        <p>
+          Cette expérience m’a permis de découvrir le fonctionnement d’un projet web
+          réel et d’apprendre à répondre aux besoins d’un client.
+        </p>
+
+       
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+ <!-- Section Projets -->
+<section id="projets">
+
+  <h2 class="titre-projets">Mes Projets</h2>
+
+  <p class="intro-projets">
+    Voici une sélection de projets et missions réalisés durant mon BTS SIO en alternance
+    au sein du centre François Baclesse.
+  </p>
+
+  <div class="projets">
+
+    <!-- GLPI -->
+    <div class="card" onclick="toggleCard(this)">
+
+      <h3>Gestion du parc informatique - GLPI</h3>
+
+      <p class="short">
+        Mise en place et utilisation de GLPI pour la gestion du parc et des tickets.
       </p>
+
+      <div class="long">
+
+        <p>
+          J’ai utilisé GLPI afin de gérer le parc informatique et suivre les incidents utilisateurs.
+        </p>
+
+        <ul>
+          <li>Installation et configuration de GLPI</li>
+          <li>Connexion avec Active Directory</li>
+          <li>Gestion des utilisateurs et rôles</li>
+          <li>Suivi des incidents via tickets</li>
+          <li>Inventaire du matériel informatique.</li>
+          <li>Gestion des équipements informatiques</li>
+        </ul>
+
+         <p>
+      Cette mission m’a permis de comprendre l’organisation d’un service informatique,
+      la priorisation des incidents et l’importance de la traçabilité dans un environnement professionnel.
+    </p>
+
+        <div class="images-projet">
+          <img src="glpi.png">
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Active Directory -->
+    <div class="card" onclick="toggleCard(this)">
+
+      <h3>Administration Active Directory</h3>
+
+      <p class="short">
+        Gestion des utilisateurs, groupes et GPO dans le domaine.
+      </p>
+
+      <div class="long">
+
+        <p>
+      J’ai travaillé quotidiennement avec Active Directory afin d’administrer
+      les accès utilisateurs et maintenir une organisation cohérente du domaine.
+    </p>
+
+        <ul>
+      <li>Création et gestion des comptes utilisateurs.</li>
+      <li>Organisation via unités organisationnelles (OU).</li>
+      <li>Mise en place de GPO pour standardiser les postes.</li>
+      <li>Gestion des permissions réseau.</li>
+      <li>Support lors de problèmes d’authentification.</li>
+    </ul>
+
+     <p>
+      Cette expérience m’a permis d’acquérir une vraie compréhension de la gestion
+      des identités et de la sécurité dans un environnement Windows Server.
+    </p>
+
+        <div class="images-projet">
+          <img src="ad.png">
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Veeam -->
+    <div class="card" onclick="toggleCard(this)">
+
+      <h3>Sauvegarde avec VEEAM</h3>
+
+      <p class="short">
+        Récupération de fichiers supprimés et restauration de données critiques.
+      </p>
+
+      <div class="long">
+
+        <p>
+          J’ai utilisé VEEAM pour restaurer des fichiers supprimés ou récupérer des
+          versions précédentes demandées par les utilisateurs.
+        </p>
+
+         <ul>
+      <li>Recherche dans les sauvegardes planifiées.</li>
+      <li>Restauration de fichiers supprimés.</li>
+      <li>Récupération de versions anciennes.</li>
+      <li>Assistance aux utilisateurs après restauration.</li>
+    </ul>
+
+     <p>
+      Cette mission m’a permis de comprendre le rôle essentiel des sauvegardes
+      dans la continuité d’activité d’une entreprise.
+    </p>
+
+        <div class="images-projet">
+          <img src="veeam.png">
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Dépannage -->
+    <div class="card" onclick="toggleCard(this)">
+
+      <h3>Dépannage informatique</h3>
+
+      <p class="short">
+        Support technique auprès des utilisateurs du centre Baclesse.
+      </p>
+
+      <div class="long">
+
+        <p>
+      Au début de mon alternance, j’ai accompagné les techniciens afin
+      d’assurer le support informatique quotidien auprès des utilisateurs.
+    </p>
+
+        <ul>
+      <li>Diagnostic et résolution de bugs informatiques.</li>
+      <li>Redémarrage et maintenance de postes.</li>
+      <li>Remplacement d’écrans et périphériques.</li>
+      <li>Vérification des connexions matérielles.</li>
+      <li>Assistance directe aux employés.</li>
+    </ul>
+
+      <p>
+      Cette expérience terrain m’a permis de développer mon sens du service,
+      ma communication professionnelle et ma capacité à résoudre rapidement des problèmes.
+    </p>
+
+        <div class="images-projet">
+          <img src="depannage.png">
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Création comptes -->
+    <div class="card" onclick="toggleCard(this)">
+
+      <h3>Création de comptes utilisateurs</h3>
+
+      <p class="short">
+        Création des comptes informatiques pour les nouveaux employés.
+      </p>
+
+      <div class="long">
+
+         <p>
+      J’ai participé au processus d’arrivée des nouveaux collaborateurs en préparant
+      leurs accès informatiques complets.
+    </p>
+
+        <ul>
+      <li>Création comptes Active Directory.</li>
+      <li>Création boîtes mail professionnelles.</li>
+      <li>Configuration comptes Microsoft.</li>
+      <li>Attribution des droits et groupes.</li>
+      <li>Préparation des postes utilisateurs.</li>
+    </ul>
+
+     <p>
+      Cette mission m’a permis de comprendre les processus internes d’une DSI
+      et l’importance d’une gestion rigoureuse des accès.
+    </p>
+
+        <div class="images-projet">
+          <img src="depannage.png">
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Nutanix -->
+    <div class="card" onclick="toggleCard(this)">
+
+      <h3>Migration VMware vers Nutanix</h3>
+
+      <p class="short">
+        Migration de l'infrastructure de virtualisation vers Nutanix.
+      </p>
+
+      <div class="long">
+
+         <p>
+      Suite à un contrat avec Nutanix, l’infrastructure a été migrée depuis VMware
+      vers une solution hyperconvergée plus moderne.
+    </p>
+
+        <ul>
+      <li>Migration des machines virtuelles.</li>
+      <li>Migration des serveurs.</li>
+      <li>Création de schémas d’infrastructure Nutanix.</li>
+      <li>Installation physique et rack des serveurs.</li>
+      <li>Participation aux tests post-migration.</li>
+    </ul>
+
+     <p>
+      Ce projet majeur m’a permis de découvrir les infrastructures datacenter
+      modernes et les enjeux d’une migration critique.
+    </p>
+
+
+        <div class="images-projet">
+          <img src="nuta.png">
+        </div>
+
+      </div>
+    </div>
+
+     <!-- Création de site web -->
+    <div class="card" onclick="toggleCard(this)">
+
+      <h3>Création de sites internet</h3>
+
+      <p class="short">
+        Conception de sites vitrines et boutiques en ligne pour des particuliers.
+      </p>
+
+      <div class="long">
+
+        <p>
+      Pendant une période personnelle et professionnelle, j’ai réalisé plusieurs
+      sites internet pour des particuliers et petits projets entrepreneuriaux.
+      L’objectif était de créer des plateformes modernes, fonctionnelles et faciles
+      à administrer.
+    </p>
+
+         <ul>
+      <li>Création de sites vitrines pour présenter des activités professionnelles.</li>
+      <li>Développement de boutiques e-commerce.</li>
+      <li>Utilisation de Visual Studio Code pour le développement.</li>
+      <li>Utilisation de Python pour certains traitements et tests.</li>
+      <li>Mise en place de boutiques via Shopify.</li>
+      <li>Personnalisation du design et optimisation de l’expérience utilisateur.</li>
+    </ul>
+
+     <p>
+      Ce projet m’a permis de développer mon autonomie, ma logique de développement
+      web ainsi que ma compréhension globale d’un projet numérique, de la création
+      jusqu’à la mise en production.
+    </p>
+
+
+        <div class="images-projet">
+          <img src="site web.png">
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Wifi -->
+    <div class="card" onclick="toggleCard(this)">
+
+      <h3>Déploiement bornes WiFi</h3>
+
+      <p class="short">
+        Amélioration de la couverture réseau sans fil du centre.
+      </p>
+
+      <div class="long">
+
+         <p>
+      J’ai participé au renouvellement du réseau WiFi afin d’améliorer
+      la stabilité et la couverture dans l’ensemble du centre.
+    </p>
+
+        <ul>
+      <li>Mise à jour firmware des bornes.</li>
+      <li>Configuration réseau avec l’équipe technique.</li>
+      <li>Installation physique dans différents bâtiments.</li>
+      <li>Tests de performance et validation du signal.</li>
+    </ul>
+
+     <p>
+      Cette mission m’a permis d’approfondir mes connaissances en réseau
+      sans fil et en déploiement d’infrastructure réelle.
+    </p>
+
+
+        <div class="images-projet">
+          <img src="bro,es wifi.png">
+        </div>
+
+      </div>
     </div>
 
   </div>
 </section>
 
+
 <style>
-.projets {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-  gap: 1.5rem;
+
+/* TITRE */
+.titre-projets{
+  font-size:40px;
+  color:#a855f7;
+  text-align:center;
+  margin-bottom:10px;
+  font-weight:700;
+  letter-spacing:1px;
 }
 
-.projets .card {
-  background: rgba(255,255,255,0.05);
-  border: 2px solid var(--color-accent);
-  border-radius: 12px;
-  padding: 1.5rem;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-  transition: transform 0.3s, box-shadow 0.3s;
-  overflow: hidden;
+.titre-projets::after{
+  content:"";
+  display:block;
+  width:80px;
+  height:4px;
+  background:#a855f7;
+  margin:10px auto;
 }
 
-.projets .card .long {
-  display: none;
-  margin-top: 1rem;
+.intro-projets{
+  text-align:center;
+  margin-bottom:40px;
 }
 
-.projets .card.active .long {
-  display: block;
+
+/* GRID */
+.projets{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.5rem;
 }
 
-.projets .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 20px rgba(168,85,247,0.3);
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.05);
+  border:2px solid #a855f7;
+  border-radius:12px;
+  padding:1.5rem;
+  cursor:pointer;
+  transition:0.3s;
 }
+
+.card h3{
+  color:#a855f7;
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.card .long{
+  display:none;
+  margin-top:15px;
+}
+
+.card.active{
+  transform:scale(1.05);
+  box-shadow:0 0 25px rgba(168,85,247,0.5);
+}
+
+.card.active .long{
+  display:block;
+}
+
+
+/* IMAGES */
+.images-projet{
+  margin-top:20px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.images-projet img{
+  width:120px;
+  border-radius:6px;
+  border:1px solid #555;
+}
+
 </style>
 
+
 <script>
-function expandCard(card) {
-  card.classList.add('active');
+
+function toggleCard(selected){
+
+  const cards=document.querySelectorAll(".card");
+
+  cards.forEach(card=>{
+    if(card!==selected){
+      card.classList.remove("active");
+    }
+  });
+
+  selected.classList.toggle("active");
 }
 
-function shrinkCard(card) {
-  card.classList.remove('active');
-}
-</script>
+</script>  
 
     <!-- Section Veille Technologique -->
     <section id="veille" class="veille">
