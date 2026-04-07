@@ -18,7 +18,7 @@
         <li><a href="#cv">CV</a></li>
         <li><a href="#experiences">Expériences</a></li>
         <li><a href="#projets">Projets</a></li>
-        <li><a href="#veille">Veille Tech</a></li>
+        <li><a href="#veille">Veille Technologique</a></li>
         <li><a href="#tableau">Tableau de Synthèse</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -122,94 +122,203 @@
       </div>
     </section>
 
-    <!-- Section CV -->
-    <section id="cv">
-      <h2>Mon CV</h2>
-      <p>Voici mon CV que vous pouvez télécharger ci-dessous :</p>
-      <a href="CV 2026.pdf" target="_blank" class="btn">Télécharger mon CV</a>
-    </section>
+   <!-- ========================= -->
+<!-- SECTION CV -->
+<!-- ========================= -->
 
-  <!-- Section Expériences -->
+<section id="cv">
+
+  <h2 class="titre-projets">Mon CV</h2>
+
+  <div class="cv-container">
+
+    <p class="cv-text">
+      Vous pouvez consulter et télécharger mon curriculum vitae afin
+      d’obtenir une vue complète de mon parcours, de mes compétences
+      et de mes expériences professionnelles.
+    </p>
+
+    <a href="CV 2026.pdf" target="_blank" class="cv-btn">
+      📄 Télécharger mon CV
+    </a>
+
+  </div>
+
+</section>
+
+
+<style>
+
+/* CONTENEUR CV */
+.cv-container{
+  max-width:700px;
+  margin:40px auto;
+  padding:40px;
+  text-align:center;
+
+  background:rgba(255,255,255,0.04);
+  border:2px solid #a855f7;
+  border-radius:14px;
+
+  box-shadow:0 0 20px rgba(168,85,247,0.25);
+  transition:0.3s;
+}
+
+.cv-container:hover{
+  box-shadow:0 0 35px rgba(168,85,247,0.45);
+  transform:translateY(-4px);
+}
+
+/* TEXTE */
+.cv-text{
+  margin-bottom:25px;
+  font-size:17px;
+  line-height:1.6;
+}
+
+/* BOUTON CV */
+.cv-btn{
+  display:inline-block;
+  padding:15px 30px;
+  font-size:18px;
+  font-weight:600;
+  text-decoration:none;
+
+  color:white;
+  background:#a855f7;
+
+  border-radius:10px;
+  border:2px solid #a855f7;
+
+  transition:0.3s;
+}
+
+/* HOVER */
+.cv-btn:hover{
+  background:transparent;
+  color:#a855f7;
+  box-shadow:0 0 18px rgba(168,85,247,0.7);
+  transform:scale(1.05);
+}
+
+</style>
+
+<!-- ========================= -->
+<!-- SECTION EXPERIENCES -->
+<!-- ========================= -->
+
 <section id="experiences">
 
   <h2 class="titre-projets">Mes Expériences</h2>
 
   <p class="intro-projets">
-    Voici mes principales expériences professionnelles réalisées durant mon BTS SIO,
-    qui m'ont permis de développer mes compétences en administration système,
-    réseau et développement web.
+    Voici mes principales expériences professionnelles réalisées durant mon BTS SIO.
+    Elles m’ont permis de développer des compétences concrètes en administration
+    systèmes et réseaux ainsi qu’en développement web.
   </p>
 
   <div class="projets">
 
-    <!-- Alternance -->
-    <div class="card" onclick="toggleCard(this)">
+    <!-- ================= ALTERNANCE ================= -->
+
+    <div class="card experience-card" onclick="toggleCard(this)">
 
       <h3>Alternance – Administrateur Systèmes & Réseaux</h3>
 
       <p class="short">
-        Gestion du système informatique et support technique au Centre François Baclesse.
+        Centre François Baclesse — Administration du système informatique et support utilisateurs.
       </p>
 
       <div class="long">
 
+        <h4>Présentation</h4>
         <p>
           Depuis septembre 2025, j’effectue mon alternance au sein du service informatique
-          du Centre François Baclesse, où je participe à l’administration du système
-          d’information et au support des utilisateurs.
+          du Centre François Baclesse. J’interviens dans la gestion quotidienne du système
+          d’information ainsi que dans l’accompagnement des utilisateurs.
         </p>
 
+        <h4>Missions principales</h4>
         <ul>
-          <li>Support informatique auprès des utilisateurs.</li>
+          <li>Support technique et assistance utilisateurs.</li>
           <li>Administration Active Directory et gestion des comptes.</li>
           <li>Gestion du parc informatique via GLPI.</li>
-          <li>Participation à la migration VMware vers Nutanix.</li>
-          <li>Déploiement de bornes WiFi dans le centre.</li>
-          <li>Restauration de fichiers via les sauvegardes VEEAM.</li>
+          <li>Participation aux projets d’infrastructure.</li>
         </ul>
 
-        <p>
-          Cette alternance me permet d’acquérir une expérience concrète dans
-          l’administration système et réseau au sein d’une infrastructure
-          informatique professionnelle.
-        </p>
+        <h4>Environnement technique</h4>
+        <ul>
+          <li>Windows Server & Active Directory</li>
+          <li>GLPI</li>
+          <li>VEEAM Backup</li>
+          <li>Infrastructure virtualisée (VMware / Nutanix)</li>
+          <li>Réseau d’entreprise</li>
+        </ul>
 
-        
+        <h4>Compétences développées</h4>
+        <ul>
+          <li>Administration systèmes et réseaux.</li>
+          <li>Gestion des incidents et priorisation.</li>
+          <li>Communication professionnelle avec les utilisateurs.</li>
+          <li>Travail en équipe dans un environnement IT réel.</li>
+        </ul>
+
+        <h4>Apports professionnels</h4>
+        <p>
+          Cette alternance me permet d’acquérir une expérience concrète dans un
+          environnement informatique professionnel exigeant, tout en développant
+          mon autonomie et ma capacité d’analyse face aux problématiques techniques.
+        </p>
 
       </div>
     </div>
 
 
-    <!-- Stage -->
-    <div class="card" onclick="toggleCard(this)">
+    <!-- ================= STAGE ================= -->
+
+    <div class="card experience-card" onclick="toggleCard(this)">
 
       <h3>Stage – Développeur Web</h3>
 
       <p class="short">
-        Création d’un site web et d’une boutique en ligne pour une entreprise.
+        Boucherie Niamat'Allah — Création d’un site web et d’une boutique en ligne.
       </p>
 
       <div class="long">
 
+        <h4>Présentation</h4>
         <p>
-          Lors de mon stage à la Boucherie Niamat'Allah, j’ai développé un site internet
-          afin d’améliorer la visibilité de l’entreprise et faciliter la vente en ligne.
+          Lors de mon stage, j’ai participé à la création d’un site internet visant
+          à améliorer la visibilité de l’entreprise et à développer sa présence en ligne.
         </p>
 
+        <h4>Objectifs du projet</h4>
         <ul>
-          <li>Création d’un site vitrine pour présenter l’entreprise.</li>
-          <li>Développement d’une boutique e-commerce.</li>
-          <li>Organisation des pages produits.</li>
-          <li>Optimisation du design et de la navigation.</li>
+          <li>Créer un site vitrine professionnel.</li>
+          <li>Mettre en place une boutique e-commerce.</li>
+          <li>Faciliter la navigation et l’accès aux produits.</li>
+        </ul>
+
+        <h4>Réalisations</h4>
+        <ul>
+          <li>Conception et organisation des pages web.</li>
+          <li>Mise en place des produits et catégories.</li>
+          <li>Optimisation du design et de l’expérience utilisateur.</li>
           <li>Configuration des outils de gestion de la boutique.</li>
         </ul>
 
-        <p>
-          Cette expérience m’a permis de découvrir le fonctionnement d’un projet web
-          réel et d’apprendre à répondre aux besoins d’un client.
-        </p>
+        <h4>Technologies utilisées</h4>
+        <ul>
+          <li>HTML / CSS</li>
+          <li>CMS e-commerce</li>
+          <li>Outils de gestion web</li>
+        </ul>
 
-       
+        <h4>Compétences développées</h4>
+        <p>
+          Cette expérience m’a permis de comprendre le cycle complet d’un projet web,
+          depuis l’analyse du besoin client jusqu’à la mise en production d’un site fonctionnel.
+        </p>
 
       </div>
     </div>
@@ -218,7 +327,52 @@
 
 </section>
 
- <!-- Section Projets -->
+
+<style>
+
+/* Sous-titres expériences */
+.experience-card h4{
+  color:#a855f7;
+  margin-top:20px;
+  margin-bottom:8px;
+  font-size:18px;
+}
+
+/* Listes plus lisibles */
+.experience-card ul{
+  margin-left:20px;
+  margin-bottom:10px;
+}
+
+.experience-card li{
+  margin-bottom:6px;
+}
+
+</style>
+
+
+<script>
+
+/* Ouvre / ferme une expérience */
+function toggleCard(selected){
+
+  const cards=document.querySelectorAll(".experience-card");
+
+  cards.forEach(card=>{
+    if(card!==selected){
+      card.classList.remove("active");
+    }
+  });
+
+  selected.classList.toggle("active");
+}
+
+</script>
+
+<!-- ========================= -->
+<!-- SECTION PROJETS -->
+<!-- ========================= -->
+
 <section id="projets">
 
   <h2 class="titre-projets">Mes Projets</h2>
@@ -230,307 +384,62 @@
 
   <div class="projets">
 
-    <!-- GLPI -->
-    <div class="card" onclick="toggleCard(this)">
-
+    <div class="card" onclick="openProjet('glpi')">
       <h3>Gestion du parc informatique - GLPI</h3>
-
-      <p class="short">
-        Mise en place et utilisation de GLPI pour la gestion du parc et des tickets.
-      </p>
-
-      <div class="long">
-
-        <p>
-          J’ai utilisé GLPI afin de gérer le parc informatique et suivre les incidents utilisateurs.
-        </p>
-
-        <ul>
-          <li>Installation et configuration de GLPI</li>
-          <li>Connexion avec Active Directory</li>
-          <li>Gestion des utilisateurs et rôles</li>
-          <li>Suivi des incidents via tickets</li>
-          <li>Inventaire du matériel informatique.</li>
-          <li>Gestion des équipements informatiques</li>
-        </ul>
-
-         <p>
-      Cette mission m’a permis de comprendre l’organisation d’un service informatique,
-      la priorisation des incidents et l’importance de la traçabilité dans un environnement professionnel.
-    </p>
-
-        <div class="images-projet">
-          <img src="glpi.png">
-        </div>
-
-      </div>
+      <p>Mise en place et utilisation de GLPI pour la gestion du parc et des tickets.</p>
     </div>
 
-
-    <!-- Active Directory -->
-    <div class="card" onclick="toggleCard(this)">
-
+    <div class="card" onclick="openProjet('ad')">
       <h3>Administration Active Directory</h3>
-
-      <p class="short">
-        Gestion des utilisateurs, groupes et GPO dans le domaine.
-      </p>
-
-      <div class="long">
-
-        <p>
-      J’ai travaillé quotidiennement avec Active Directory afin d’administrer
-      les accès utilisateurs et maintenir une organisation cohérente du domaine.
-    </p>
-
-        <ul>
-      <li>Création et gestion des comptes utilisateurs.</li>
-      <li>Organisation via unités organisationnelles (OU).</li>
-      <li>Mise en place de GPO pour standardiser les postes.</li>
-      <li>Gestion des permissions réseau.</li>
-      <li>Support lors de problèmes d’authentification.</li>
-    </ul>
-
-     <p>
-      Cette expérience m’a permis d’acquérir une vraie compréhension de la gestion
-      des identités et de la sécurité dans un environnement Windows Server.
-    </p>
-
-        <div class="images-projet">
-          <img src="ad.png">
-        </div>
-
-      </div>
+      <p>Gestion des utilisateurs, groupes et GPO dans le domaine.</p>
     </div>
 
-
-    <!-- Veeam -->
-    <div class="card" onclick="toggleCard(this)">
-
-      <h3>Sauvegarde avec VEEAM</h3>
-
-      <p class="short">
-        Récupération de fichiers supprimés et restauration de données critiques.
-      </p>
-
-      <div class="long">
-
-        <p>
-          J’ai utilisé VEEAM pour restaurer des fichiers supprimés ou récupérer des
-          versions précédentes demandées par les utilisateurs.
-        </p>
-
-         <ul>
-      <li>Recherche dans les sauvegardes planifiées.</li>
-      <li>Restauration de fichiers supprimés.</li>
-      <li>Récupération de versions anciennes.</li>
-      <li>Assistance aux utilisateurs après restauration.</li>
-    </ul>
-
-     <p>
-      Cette mission m’a permis de comprendre le rôle essentiel des sauvegardes
-      dans la continuité d’activité d’une entreprise.
-    </p>
-
-        <div class="images-projet">
-          <img src="veeam.png">
-        </div>
-
-      </div>
+    <div class="card" onclick="openProjet('veeam')">
+      <h3>Sauvegardes VEEAM</h3>
+      <p>Restauration de données critiques.</p>
     </div>
 
-
-    <!-- Dépannage -->
-    <div class="card" onclick="toggleCard(this)">
-
+    <div class="card" onclick="openProjet('depannage')">
       <h3>Dépannage informatique</h3>
-
-      <p class="short">
-        Support technique auprès des utilisateurs du centre Baclesse.
-      </p>
-
-      <div class="long">
-
-        <p>
-      Au début de mon alternance, j’ai accompagné les techniciens afin
-      d’assurer le support informatique quotidien auprès des utilisateurs.
-    </p>
-
-        <ul>
-      <li>Diagnostic et résolution de bugs informatiques.</li>
-      <li>Redémarrage et maintenance de postes.</li>
-      <li>Remplacement d’écrans et périphériques.</li>
-      <li>Vérification des connexions matérielles.</li>
-      <li>Assistance directe aux employés.</li>
-    </ul>
-
-      <p>
-      Cette expérience terrain m’a permis de développer mon sens du service,
-      ma communication professionnelle et ma capacité à résoudre rapidement des problèmes.
-    </p>
-
-        <div class="images-projet">
-          <img src="depannage.png">
-        </div>
-
-      </div>
+      <p>Support technique utilisateurs.</p>
     </div>
 
-
-    <!-- Création comptes -->
-    <div class="card" onclick="toggleCard(this)">
-
-      <h3>Création de comptes utilisateurs</h3>
-
-      <p class="short">
-        Création des comptes informatiques pour les nouveaux employés.
-      </p>
-
-      <div class="long">
-
-         <p>
-      J’ai participé au processus d’arrivée des nouveaux collaborateurs en préparant
-      leurs accès informatiques complets.
-    </p>
-
-        <ul>
-      <li>Création comptes Active Directory.</li>
-      <li>Création boîtes mail professionnelles.</li>
-      <li>Configuration comptes Microsoft.</li>
-      <li>Attribution des droits et groupes.</li>
-      <li>Préparation des postes utilisateurs.</li>
-    </ul>
-
-     <p>
-      Cette mission m’a permis de comprendre les processus internes d’une DSI
-      et l’importance d’une gestion rigoureuse des accès.
-    </p>
-
-        <div class="images-projet">
-          <img src="depannage.png">
-        </div>
-
-      </div>
+    <div class="card" onclick="openProjet('NAS')">
+      <h3>Migration de serveurs NAS</h3>
+      <p>Migration de fichiers partagés.</p>
     </div>
 
-
-    <!-- Nutanix -->
-    <div class="card" onclick="toggleCard(this)">
-
+    <div class="card" onclick="openProjet('nutanix')">
       <h3>Migration VMware vers Nutanix</h3>
-
-      <p class="short">
-        Migration de l'infrastructure de virtualisation vers Nutanix.
-      </p>
-
-      <div class="long">
-
-         <p>
-      Suite à un contrat avec Nutanix, l’infrastructure a été migrée depuis VMware
-      vers une solution hyperconvergée plus moderne.
-    </p>
-
-        <ul>
-      <li>Migration des machines virtuelles.</li>
-      <li>Migration des serveurs.</li>
-      <li>Création de schémas d’infrastructure Nutanix.</li>
-      <li>Installation physique et rack des serveurs.</li>
-      <li>Participation aux tests post-migration.</li>
-    </ul>
-
-     <p>
-      Ce projet majeur m’a permis de découvrir les infrastructures datacenter
-      modernes et les enjeux d’une migration critique.
-    </p>
-
-
-        <div class="images-projet">
-          <img src="nuta.png">
-        </div>
-
-      </div>
+      <p>Migration infrastructure virtualisée.</p>
     </div>
 
-     <!-- Création de site web -->
-    <div class="card" onclick="toggleCard(this)">
-
+    <div class="card" onclick="openProjet('sites')">
       <h3>Création de sites internet</h3>
-
-      <p class="short">
-        Conception de sites vitrines et boutiques en ligne pour des particuliers.
-      </p>
-
-      <div class="long">
-
-        <p>
-      Pendant une période personnelle et professionnelle, j’ai réalisé plusieurs
-      sites internet pour des particuliers et petits projets entrepreneuriaux.
-      L’objectif était de créer des plateformes modernes, fonctionnelles et faciles
-      à administrer.
-    </p>
-
-         <ul>
-      <li>Création de sites vitrines pour présenter des activités professionnelles.</li>
-      <li>Développement de boutiques e-commerce.</li>
-      <li>Utilisation de Visual Studio Code pour le développement.</li>
-      <li>Utilisation de Python pour certains traitements et tests.</li>
-      <li>Mise en place de boutiques via Shopify.</li>
-      <li>Personnalisation du design et optimisation de l’expérience utilisateur.</li>
-    </ul>
-
-     <p>
-      Ce projet m’a permis de développer mon autonomie, ma logique de développement
-      web ainsi que ma compréhension globale d’un projet numérique, de la création
-      jusqu’à la mise en production.
-    </p>
-
-
-        <div class="images-projet">
-          <img src="site web.png">
-        </div>
-
-      </div>
+      <p>Sites vitrines et e-commerce.</p>
     </div>
 
-
-    <!-- Wifi -->
-    <div class="card" onclick="toggleCard(this)">
-
+    <div class="card" onclick="openProjet('wifi')">
       <h3>Déploiement bornes WiFi</h3>
-
-      <p class="short">
-        Amélioration de la couverture réseau sans fil du centre.
-      </p>
-
-      <div class="long">
-
-         <p>
-      J’ai participé au renouvellement du réseau WiFi afin d’améliorer
-      la stabilité et la couverture dans l’ensemble du centre.
-    </p>
-
-        <ul>
-      <li>Mise à jour firmware des bornes.</li>
-      <li>Configuration réseau avec l’équipe technique.</li>
-      <li>Installation physique dans différents bâtiments.</li>
-      <li>Tests de performance et validation du signal.</li>
-    </ul>
-
-     <p>
-      Cette mission m’a permis d’approfondir mes connaissances en réseau
-      sans fil et en déploiement d’infrastructure réelle.
-    </p>
-
-
-        <div class="images-projet">
-          <img src="bro,es wifi.png">
-        </div>
-
-      </div>
+      <p>Amélioration couverture réseau.</p>
     </div>
 
   </div>
+
 </section>
+
+
+<!-- ========================= -->
+<!-- OVERLAY PROJET -->
+<!-- ========================= -->
+
+<div id="projetOverlay">
+  <span class="close" onclick="closeProjet()">✕</span>
+
+  <div class="overlay-content">
+    <div id="projetDetail"></div>
+  </div>
+</div>
 
 
 <style>
@@ -542,7 +451,6 @@
   text-align:center;
   margin-bottom:10px;
   font-weight:700;
-  letter-spacing:1px;
 }
 
 .titre-projets::after{
@@ -559,14 +467,12 @@
   margin-bottom:40px;
 }
 
-
 /* GRID */
 .projets{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:1.5rem;
 }
-
 
 /* CARD */
 .card{
@@ -578,39 +484,63 @@
   transition:0.3s;
 }
 
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 25px rgba(168,85,247,0.6);
+}
+
 .card h3{
   color:#a855f7;
-  font-size:20px;
-  margin-bottom:10px;
 }
 
-.card .long{
+/* OVERLAY */
+
+#projetOverlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#0b0b0f;
   display:none;
-  margin-top:15px;
+  z-index:9999;
+  overflow-y:auto;
 }
 
-.card.active{
-  transform:scale(1.05);
-  box-shadow:0 0 25px rgba(168,85,247,0.5);
+.overlay-content{
+  max-width:1000px;
+  margin:auto;
+  padding:80px 20px;
+  color:white;
 }
 
-.card.active .long{
-  display:block;
+.close{
+  position:fixed;
+  top:25px;
+  right:35px;
+  font-size:38px;
+  color:#a855f7;
+  cursor:pointer;
 }
 
+.overlay-content h1{
+  color:#a855f7;
+  font-size:38px;
+}
 
-/* IMAGES */
-.images-projet{
+.overlay-content h2{
+  color:#a855f7;
+  margin-top:35px;
+  border-left:4px solid #a855f7;
+  padding-left:10px;
+}
+
+.overlay-content img{
+  width:100%;
+  max-width:700px;
+  border-radius:10px;
   margin-top:20px;
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-}
-
-.images-projet img{
-  width:120px;
-  border-radius:6px;
-  border:1px solid #555;
+  border:1px solid #444;
 }
 
 </style>
@@ -618,20 +548,465 @@
 
 <script>
 
-function toggleCard(selected){
+const projets = {
 
-  const cards=document.querySelectorAll(".card");
+glpi: `
+<h1>Gestion du parc informatique - GLPI</h1>
 
-  cards.forEach(card=>{
-    if(card!==selected){
-      card.classList.remove("active");
-    }
-  });
+<h2>Présentation du projet</h2>
+<p>Le projet consistait à utiliser GLPI pour gérer le parc informatique et suivre les demandes des utilisateurs au sein du service informatique du Centre François Baclesse. GLPI est un outil ITSM (IT Service Management) permettant de centraliser les incidents, les demandes de création de comptes et la gestion du matériel.
+</p>
 
-  selected.classList.toggle("active");
+<h2>But et planification</h2>
+<p>L’objectif principal était de participer à la gestion des tickets et à l’administration du parc informatique. J’ai été chargé de traiter les tickets qui me revenaient, notamment pour la création de comptes pour les nouveaux arrivants et le suivi des incidents mineurs. Chaque ticket était traité selon les priorités définies par les techniciens et en coordination avec les besoins des utilisateurs.</p>
+
+<h2>Technologies utilisées</h2>
+<ul>
+<li>GLPI pour la gestion des tickets et du parc informatique</li>
+<li>Active Directory pour la création et gestion des comptes utilisateurs</li>
+<li>Serveur Web pour héberger l’application GLPI et gérer les accès</li>
+</ul>
+
+<h2>Réalisation technique</h2>
+<ul>
+<li>Traiter des demandes de création de comptes pour les nouveaux arrivants</li>
+<li>Gérer les inventaires matériels et organiser les déplacements ou remplacements d’équipements</li>
+<li>Suivre les incidents signalés par les salariés</li>
+</ul>
+
+<h2>Difficultés rencontrées et solutions</h2>
+<p>Certaines demandes étaient parfois imprécises ou urgentes, ce qui nécessitait de prioriser et clarifier les tickets avec les techniciens et les utilisateurs. J’ai appris à identifier rapidement les besoins et à proposer des solutions adaptées, tout en respectant la procédure ITSM et les bonnes pratiques de gestion des tickets.</p>
+
+<h2>Compétences acquises</h2>
+<p>Cette expérience m’a permis de développer plusieurs compétences clés :</p>
+<ul>
+<li>Traitement de tickets et suivi des incidents</li>
+<li>Coordination avec une équipe technique et communication professionnelle</li>
+<li>Compréhension du fonctionnement d’un service informatique dans un environnement réel</li>
+</ul>
+
+<h2>Photos du projet</h2>
+<img src="glpi.png">
+<img src="glpi tableau.png">
+`,
+
+ad: `
+<h1>Administration Active Directory</h1>
+
+<h2>Présentation du projet</h2>
+<p>Ce projet consistait à administrer Active Directory (AD) pour gérer les utilisateurs, groupes et postes du domaine du Centre François Baclesse. L’AD est un outil central permettant de contrôler l’accès aux ressources, d’organiser les utilisateurs et de sécuriser le système d’information.</p>
+
+<h2>But et planification</h2>
+<p>L’objectif était de participer à l’administration du domaine et à la mise en place de politiques de groupe (GPO) pour standardiser la configuration des postes. Mon travail comprenait :</p>
+<ul>
+<li>Création et organisation des comptes utilisateurs dans les OU appropriées</li>
+<li>Mise en place de GPO pour appliquer des configurations et sécuriser les postes</li>
+<li>Suivi des permissions et contrôle des accès réseau</li>
+</ul>
+
+<h2>Technologies utilisées</h2>
+<ul>
+<li>Active Directory pour gérer les utilisateurs et les groupes</li>
+<li>GPO (Group Policy Objects) pour automatiser la configuration et sécuriser le domaine</li>
+<li>Serveurs Windows pour l’hébergement de l’AD et des services associés</li>
+</ul>
+
+<h2>Réalisation technique</h2>
+<p>En collaboration avec les administrateurs systèmes, j’ai appris à :</p>
+<ul>
+<li>Créer et configurer des comptes utilisateurs dans les bonnes OU</li>
+<li>Déployer des GPO pour appliquer des restrictions et configurations standards sur les postes</li>
+<li>Suivre les permissions et intervenir lors d’incidents liés aux comptes utilisateurs</li>
+</ul>
+
+<h2>Difficultés rencontrées et solutions</h2>
+<p>Au début, comprendre la structure des OU et l’impact des GPO pouvait être complexe. J’ai donc travaillé avec les admins pour m’assurer que chaque modification était correctement appliquée, tout en testant les GPO sur des postes pilotes avant le déploiement global. Cette méthode m’a permis d’éviter les erreurs et de sécuriser l’environnement.</p>
+
+<h2>Compétences acquises</h2>
+<p>Cette expérience m’a permis de :</p>
+<ul>
+<li>Maîtriser la création et la gestion des comptes utilisateurs dans AD</li>
+<li>Comprendre l’organisation des OU et des groupes pour une gestion optimale</li>
+<li>Développer mes compétences en administration Windows Server et en gestion des accès</li>
+</ul>
+
+<h2>Photos du projet</h2>
+<img src="ad.png">
+<img src="AD inter.png">
+`,
+
+veeam: `
+<h1>Sauvegarde avec VEEAM</h1>
+
+<h2>Présentation du projet</h2>
+<p>Le projet consistait à utiliser le logiciel VEEAM pour restaurer des fichiers ou récupérer des versions précédentes des données au sein du Centre François Baclesse. VEEAM est une solution de sauvegarde et de restauration utilisée pour garantir la continuité des activités et la sécurité des informations.
+Cette mission s’inscrit directement dans la stratégie de PCA (Plan de Continuité d’Activité) et de PRA (Plan de Reprise d’Activité) du centre, afin de minimiser les interruptions en cas d’incident et de restaurer rapidement les données critiques.</p>
+
+<h2>But et planification</h2>
+<p>L’objectif principal était de comprendre et participer au processus de restauration de données, en suivant les procédures définies par les admins réseau et les plans de continuité :</p>
+<ul>
+<li>Identifier les fichiers et versions demandés par les utilisateurs</li>
+<li>Restaurer les données de manière sécurisée et rapide</li>
+<li>Vérifier l’intégrité et la disponibilité des fichiers restaurés</li>
+<li>Participer à la documentation des procédures dans le cadre du PRA</li>
+</ul>
+
+<h2>Technologies utilisées</h2>
+<ul>
+<li>VEEAM Backup</li>
+</ul>
+
+<h2>Réalisation technique</h2>
+<p>Restauration fichiers et versions.</p>
+<ul>
+<li>Identifier et localiser les fichiers ou versions anciennes demandés par les utilisateurs</li>
+<li>Restaurer les fichiers depuis les sauvegardes planifiées sur le serveur Windows</li>
+<li>Vérifier l’intégrité des données et valider la restauration</li>
+<li>Suivre les procédures du PCA/PRA pour garantir la continuité de service</li>
+</ul>
+
+<h2>Difficultés rencontrées et solutions</h2>
+<p>Certaines restaurations étaient complexes car il fallait retrouver des versions très anciennes ou spécifiques. J’ai appris à naviguer efficacement dans l’interface de VEEAM et à collaborer avec les administrateurs pour assurer que les restaurations respectaient les exigences du PRA.</p>
+
+<h2>Compétences acquises</h2>
+<ul>
+<li>Compréhension du rôle des sauvegardes dans la continuité des activités et dans un PRA</li>
+<li>Maîtrise du logiciel VEEAM pour la restauration de fichiers</li>
+<li>Connaissance pratique des serveurs Windows et de la gestion des données critiques</li>
+</ul>
+
+<h2>Photos du projet</h2>
+<img src="veeam.png">
+`,
+
+depannage: `
+<h1>Dépannage informatique</h1>
+
+<h2>Présentation du projet</h2>
+<p>Dans le cadre de mon alternance au Centre François Baclesse, j’ai participé aux activités de support informatique aux côtés des techniciens du service IT. Cette mission consistait à intervenir auprès des employés afin de résoudre les incidents informatiques rencontrés sur leurs postes de travail et garantir la continuité de leurs activités professionnelles.</p>
+
+<h2>But et planification</h2>
+<p>L’objectif principal était d’assurer le bon fonctionnement des postes informatiques des utilisateurs en répondant rapidement aux demandes de support. Les interventions étaient réalisées à la suite d’appels ou de tickets signalant différents types de problèmes techniques.</p>
+
+<h2>Technologies utilisées</h2>
+<ul>
+<li>Environnement Windows</li>
+<li>Active Directory</li>
+<li>GLPI (gestion des tickets)</li>
+<li>Logiciels métiers hospitaliers (DxCare)</li>
+<li>Postes clients et périphériques informatiques</li>
+</ul>
+
+<h2>Réalisation technique</h2>
+<ul>
+<li>Prise en charge des demandes utilisateurs via le système de tickets</li>
+<li>Diagnostic des incidents matériels et logiciels</li>
+<li>Remplacement de périphériques défectueux (souris, clavier, etc.)</li>
+<li>Installation et mise à jour de logiciels</li>
+<li>Correction de bugs et résolution de problèmes système</li>
+<li>Assistance directe auprès des utilisateurs sur site</li>
+</ul>
+
+<h2>Difficultés rencontrées et solutions</h2>
+<p>Le principal défi était la gestion des priorités dans un environnement hospitalier, où certaines interventions devaient être réalisées très rapidement afin de ne pas impacter la prise en charge des patients. Une bonne organisation, une communication efficace avec les utilisateurs et une analyse rapide des problèmes ont permis d’assurer des dépannages efficaces tout en maintenant la continuité du service.</p>
+
+<h2>Compétences acquises</h2>
+<p>Cette expérience m’a permis de développer plusieurs compétences clés :</p>
+<ul>
+<li>Diagnostic et résolution d’incidents informatiques</li>
+<li>Support utilisateurs en environnement professionnel</li>
+<li>Gestion des priorités et des urgences</li>
+<li>Travail en équipe dans un contexte exigeant</li>
+<li>Organisation et réactivité en environnement hospitalier</li>
+</ul>
+
+<h2>Photos du projet</h2>
+<img src="depannage.png">
+<img src="glpi tableau.png">
+`,
+
+NAS: `
+<h1>Migration de serveurs NAS</h1>
+
+<h2>Présentation du projet</h2>
+<p>Le projet consistait à migrer les données et les services de plusieurs anciens NAS vers une nouvelle infrastructure basée sur deux serveurs Synology configurés en haute disponibilité.
+L’objectif était d’améliorer la fiabilité du stockage, la continuité de service et la gestion centralisée des données au sein du Centre François Baclesse.
+
+Cette migration s’inscrivait dans une démarche d’évolution de l’infrastructure informatique afin de garantir une meilleure disponibilité des fichiers utilisateurs et une sécurité renforcée des données.</p>
+
+<h2>But et planification</h2>
+<p>L’objectif principal était de remplacer les anciens NAS pour avoir plus de stockage, tout en assurant une migration transparente pour les utilisateurs et sans interruption majeure de service.
+  Les étapes principales du projet:</p>
+<ul>
+<li>Préparer les nouveaux serveurs Synology</li>
+<li>Mettre en place un cluster haute disponibilité (HA)</li>
+<li>Configurer le Heartbeat entre les deux serveurs</li>
+<li>Migrer l’ensemble des données depuis les anciens NAS</li>
+<li>Recréer les accès utilisateurs et permissions</li>
+<li>Intégrer les nouveaux équipements dans l’infrastructure réseau existante</li>
+<li>Tester la continuité de service et la bascule automatique</li>
+</ul>
+
+<h2>Technologies utilisées</h2>
+<ul>
+<li>NAS Synology (DSM)</li>
+<li>Synology High Availability (SHA)</li>
+<li>IPAM (gestion des adresses IP)</li>
+<li>SMTP (notifications système)</li>
+<li>NTP (synchronisation horaire)</li>
+<li>Réseau d’entreprise Windows</li>
+<li>Rsync (pour le transfert de fichier)</li>
+</ul>
+
+<h2>Réalisation technique</h2>
+<p>Mise en place de l’infrastructure :</p>
+<ul>
+<li>Installation et configuration des deux serveurs Synology</li>
+<li>Création d’un cluster haute disponibilité</li>
+<li>Configuration du Heartbeat pour assurer la communication entre les deux NAS</li>
+<li>Tests de bascule automatique en cas de panne</li>
+</ul>
+
+<p>Configuration réseau :</p>
+<ul>
+<li>Réservation d’une nouvelle adresse IP via l’IPAM de l’entreprise</li>
+<li>Configuration réseau des NAS</li>
+<li>Intégration dans le domaine Active Directory</li>
+</ul>
+
+<p>Migration des données :</p>
+<ul>
+<li>Copie complète des données depuis les anciens NAS vers la nouvelle infrastructure</li>
+<li>Vérification de l’intégrité des fichiers migrés</li>
+<li>Organisation et validation des dossiers partagés</li>
+</ul>
+
+<p>Gestion des accès utilisateurs :</p>
+<ul>
+<li>Recréation des droits d’accès aux dossiers partagés</li>
+<li>Attribution des permissions selon les groupes Active Directory</li>
+<li>Tests d’authentification utilisateurs</li>
+</ul>
+
+<h2>Difficultés rencontrées et solutions</h2>
+<p>La migration a principalement présenté des défis liés au transfert d’un volume important de données et à la reconfiguration des droits d’accès utilisateurs sans perturber le service. La mise en place du cluster haute disponibilité nécessitait également une configuration précise pour garantir une bascule fonctionnelle entre les serveurs. Des tests réguliers et des vérifications de l’intégrité des données ont permis d’assurer une migration fiable et sécurisée.</p>
+
+<h2>Compétences acquises</h2>
+<ul>
+<li>Mise en place d’une infrastructure haute disponibilité</li>
+<li>Configuration d’un cluster Synology et du Heartbeat</li>
+<li>Migration de données critiques en environnement professionnel</li>
+<li>Gestion avancée des permissions et accès utilisateurs</li>
+<li>Intégration d’équipements dans un domaine Active Directory</li>
+<li>Configuration de services réseau (SMTP, NTP, IPAM)</li>
+</ul>
+
+<h2>Photos du projet</h2>
+<img src="Nas.png">
+<img src="nas dossier partagé.png">
+<img src="synology.jpeg">
+`,
+
+nutanix: `
+<h1>Migration VMware vers Nutanix</h1>
+
+<h2>Présentation du projet</h2>
+<p>Dans le cadre de l’évolution de l’infrastructure informatique du Centre François Baclesse, un projet de migration de la plateforme de virtualisation VMware vers une solution Nutanix a été lancé afin d’améliorer la performance, la scalabilité et la résilience du système d’information.
+
+Le projet a été réalisé en collaboration avec l’entreprise Square, chargée de la fourniture des équipements et des solutions logicielles Nutanix. J’ai participé aux différentes étapes techniques aux côtés des administrateurs systèmes et réseaux.</p>
+
+<h2>But et planification</h2>
+<p>L’objectif principal était de mettre en place une nouvelle infrastructure hyperconvergée Nutanix tout en assurant une transition progressive depuis l’environnement VMware existant, sans interruption des services critiques.</p> 
+<p>Les principales étapes du projet :</p>
+<ul>
+<li>Installation physique des nouveaux équipements</li>
+<li>Mise en place d’une infrastructure redondée sur deux salles de production</li>
+<li>Préparation de l’environnement Nutanix</li>
+<li>Migration progressive des machines virtuelles</li>
+<li>Documentation et schématisation de l’infrastructure</li>
+</ul>
+
+<h2>Technologies utilisées</h2>
+<ul>
+<li>Nutanix (AHV)</li>
+<li>VMware vSphere</li>
+<li>Infrastructure hyperconvergée</li>
+<li>Switchs réseau d’entreprise</li>
+<li>Schémas d’infrastructure réseau</li>
+</ul>
+
+<h2>Réalisation technique</h2>
+<p>Installation matérielle:</p>
+<ul>
+<li>Rack des serveurs Nutanix (environ une dizaine)</li>
+<li>Installation et câblage des switchs réseau</li>
+<li>Déploiement des équipements dans deux salles de production distinctes pour assurer la redondance</li>
+</ul>
+
+<p>Mise en place de l’infrastructure:</p>
+<ul>
+<li>Participation à la préparation de l’environnement Nutanix</li>
+<li>Vérification des connectiques réseau et alimentation</li>
+<li>Collaboration avec les administrateurs systèmes lors du déploiement</li>
+</ul>
+
+<p>Migration des machines virtuelles:</p>
+<ul>
+<li>Migration progressive des VM et serveurs depuis VMware vers Nutanix</li>
+<li>Suivi de la compatibilité des systèmes existants</li>
+<li>Participation aux tests de fonctionnement après migration</li>
+</ul>
+
+<p>Documentation technique:</p>
+<ul>
+<li>Création d’un schéma d’infrastructure des baies informatiques</li>
+<li>Représentation des équipements et de leurs connectiques dans les deux salles</li>
+<li>Amélioration de la visibilité globale de l’architecture pour l’équipe IT</li>
+</ul>
+
+<h2>Difficultés rencontrées et solutions</h2>
+<p>La principale difficulté concernait la migration de certaines anciennes machines virtuelles VMware non totalement compatibles avec l’environnement Nutanix, rendant leur transfert plus complexe et nécessitant des adaptations spécifiques. La migration a donc été réalisée progressivement afin de sécuriser chaque étape et limiter les risques pour les services en production.</p>
+
+<h2>Compétences acquises</h2>
+<p>Cette expérience m’a permis de développer plusieurs compétences clés :</p>
+<ul>
+<li>Découverte d’une infrastructure hyperconvergée (Nutanix)</li>
+<li>Installation physique d’équipements en datacenter (rack & câblage)</li>
+<li>Compréhension d’un projet de migration d’infrastructure à grande échelle</li>
+<li>Virtualisation et migration de machines virtuelles</li>
+<li>Lecture et conception de schémas d’infrastructure</li>
+</ul>
+
+<h2>Photos du projet</h2>
+<img src="schéma NUTA infra.png">
+<img src="schéma infra switchs.png">
+<img src="vsphere.png">
+`,
+
+sites: `
+<h1>Création de sites internet</h1>
+
+<h2>Présentation du projet</h2>
+<p>En parallèle de ma formation, j’ai réalisé plusieurs projets personnels de création de sites internet pour des particuliers, des amis et des petites activités locales. Ces projets consistaient principalement à concevoir des sites vitrines ainsi que des boutiques en ligne afin d’améliorer leur présence sur internet et de faciliter la vente de leurs produits ou services.
+
+Ces expériences m’ont permis de découvrir concrètement le cycle complet de création d’un site web, depuis l’analyse du besoin client jusqu’à la mise en ligne du site.</p>
+
+<h2>But et planification</h2>
+<p>En parallèle de ma formation, j’ai réalisé plusieurs projets personnels de création de sites internet pour des particuliers, des amis et des petites activités locales. Ces projets consistaient principalement à concevoir des sites vitrines ainsi que des boutiques en ligne afin d’améliorer leur présence sur internet et de faciliter la vente de leurs produits ou services.
+
+Ces expériences m’ont permis de découvrir concrètement le cycle complet de création d’un site web, depuis l’analyse du besoin client jusqu’à la mise en ligne du site.</p>
+<ul>
+<li>Analyse des besoins clients</li>
+<li>Conception de la structure du site</li>
+<li>Développement et personnalisation</li>
+<li>Tests et mise en production</li>
+<li>Livraison et accompagnement utilisateur</li>
+</ul>
+
+<h2>Technologies utilisées</h2>
+<ul>
+<li>HTML / CSS</li>
+<li>Python</li>
+<li>Java</li>
+<li>Shopify (e-commerce)</li>
+<li>Visual Studio Code</li>
+</ul>
+
+<h2>Réalisation technique</h2>
+<ul>
+<li>Création de sites vitrines pour présenter des activités professionnelles</li>
+<li>Mise en place de boutiques en ligne via Shopify</li>
+<li>Développement et personnalisation des pages web</li>
+<li>Organisation du contenu et optimisation de la navigation</li>
+<li>Mise en ligne et configuration des sites</li>
+<li>Vente de sites web réalisés pour différents clients</li>
+</ul>
+
+<h2>Difficultés rencontrées et solutions</h2>
+<p>La principale difficulté était de bien comprendre les attentes des clients, qui n’avaient pas toujours une vision claire de leur projet ou de leurs besoins réels. Il fallait donc poser les bonnes questions, proposer des solutions adaptées et ajuster régulièrement le site afin de correspondre à leurs attentes tout en restant techniquement réalisable.</p>
+
+<h2>Compétences acquises</h2>
+<p>Cette expérience m’a permis de développer plusieurs compétences clés :</p>
+<ul>
+<li>Développement web front-end</li>
+<li>Compréhension du besoin client</li>
+<li>Gestion de projet web</li>
+<li>Communication avec des clients non techniques</li>
+<li>Autonomie et organisation</li>
+</ul>
+
+<h2>Photos du projet</h2>
+<img src="Site 2.png">
+<img src="Site creer.png">
+`,
+
+wifi: `
+<h1>Déploiement bornes wifi</h1>
+
+<h2>Présentation du projet</h2>
+<p>Dans le cadre de l’amélioration du réseau sans fil du Centre François Baclesse, un projet de remplacement d’environ cinquante bornes Wi-Fi a été mis en place afin de résoudre des problèmes de lenteur du réseau et d’instabilité de la connexion rencontrés par les utilisateurs dans les différents étages de l’établissement.
+
+Ce projet visait à moderniser l’infrastructure Wi-Fi en déployant de nouvelles bornes Cisco offrant de meilleures performances et une gestion optimisée de la mobilité des utilisateurs.
+</p>
+
+<h2>But et planification</h2>
+<p>L’objectif principal était d’améliorer la couverture réseau, le débit et la stabilité des connexions Wi-Fi, notamment lors des déplacements des utilisateurs entre différentes zones du bâtiment.</p>
+<ul>
+<li>Remplacement progressif des anciennes bornes Wi-Fi</li>
+<li>Installation des nouvelles bornes Cisco</li>
+<li>Mise à jour et configuration des équipements</li>
+<li>Tests de connectivité et de performance réseau</li>
+</ul>
+
+<h2>Technologies utilisées</h2>
+<ul>
+<li>Bornes Wi-Fi Cisco</li>
+<li>Switchs réseau d’entreprise</li>
+<li>Infrastructure réseau hospitalière</li>
+<li>Réseau sans fil professionnel (Wi-Fi entreprise)</li>
+</ul>
+
+<h2>Réalisation technique</h2>
+<ul>
+<li>Connexion des nouvelles bornes Wi-Fi aux switchs réseau</li>
+<li>Mise à jour des bornes Cisco avant leur déploiement</li>
+<li>Vérification du bon fonctionnement réseau après installation</li>
+<li>Participation aux tests de couverture et de stabilité du Wi-Fi</li>
+<li>Collaboration avec l’équipe réseau lors du déploiement dans les étages</li>
+</ul>
+
+<h2>Difficultés rencontrées et solutions</h2>
+<p>Le principal défi provenait des problèmes existants de saturation réseau et de mauvaise transition entre les bornes Wi-Fi, ce qui provoquait des pertes de connexion lors des déplacements des utilisateurs. Le remplacement par des bornes plus performantes et leur mise à jour avant installation ont permis d’améliorer progressivement la qualité du réseau et la continuité de connexion.</p>
+
+<h2>Compétences acquises</h2>
+<p>Cette expérience m’a permis de développer plusieurs compétences clés :</p>
+<ul>
+<li>Déploiement d’équipements réseau en environnement professionnel</li>
+<li>Configuration et mise à jour de bornes Wi-Fi Cisco</li>
+<li>Compréhension des problématiques de couverture Wi-Fi</li>
+<li>Travail en équipe sur un projet d’infrastructure réseau</li>
+<li>Diagnostic de problèmes de performance réseau</li>
+</ul>
+
+<h2>Photos du projet</h2>
+<img src="MAJ brones.jpeg">
+<img src="Putty bornes wifi.png">
+`,
+};
+
+
+function openProjet(id){
+  document.getElementById("projetOverlay").style.display="block";
+  document.getElementById("projetDetail").innerHTML = projets[id];
+  document.body.style.overflow="hidden";
 }
 
-</script>  
+function closeProjet(){
+  document.getElementById("projetOverlay").style.display="none";
+  document.body.style.overflow="auto";
+}
+
+</script>
 
     <!-- Section Veille Technologique -->
     <section id="veille" class="veille">
@@ -660,9 +1035,10 @@ function toggleCard(selected){
         <div class="veille-card">
           <h3>📅 Sujets Récents</h3>
           <ul>
-            <li>Évolution des ransomwares et IA dans la cybersécurité</li>
-            <li>Attaques DDoS de nouvelle génération</li>
-            <li>Amélioration des protocoles de chiffrement</li>
+            <li>IA & Cyberattaques : Phishing et deepfakes plus réalistes</li>
+            <li>Vols d'identités: comptes et mots de passe = cible principale</li>
+            <li>Cyberguerres : attaques entre États</li>
+            <li>Ransomeware : extorsion de plus en plus fréquentes</li>
           </ul>
         </div>
       </div>
