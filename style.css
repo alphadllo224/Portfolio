@@ -34,11 +34,13 @@ body {
   background: rgba(15, 15, 25, 0.95);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* On centre tout verticalement et horizontalement */
+  justify-content: flex-start; 
+  align-items: center; 
   position: fixed;
   left: 0;
   top: 0;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem; /* Augmente un peu le padding du haut */
   box-shadow: 2px 0 10px rgba(0,0,0,0.3);
   z-index: 100;
 }
@@ -46,8 +48,9 @@ body {
 .sidebar h1 {
   color: var(--color-accent);
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 1.3rem;
+  margin-bottom: 3rem; /* Espace sous ton nom */
+  font-size: 1.4rem;
+  width: 100%;
 }
 
 .sidebar nav ul {
@@ -197,8 +200,9 @@ section h2 {
 }
 
 .veille-container {
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template-columns:repeat(3,minmax(280px,1fr));
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -223,33 +227,62 @@ section h2 {
   margin-bottom: 1rem;
 }
 
-/* ----- PROJETS ----- */
+/* ----- PROJETS (MISE À JOUR : 4 COLONNES) ----- */
+/* ----- PROJETS (MISE À JOUR FINALE) ----- */
 .projets {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  /* On force 4 colonnes de largeur égale (1fr) */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 1.5rem;
+  /* On s'assure que la grille prend toute la largeur disponible */
+  width: 100%;
+  align-items: stretch;
 }
 
 .projets .card {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border: 2px solid var(--color-accent);
   border-radius: 12px;
   padding: 1.5rem;
   cursor: pointer;
-  position: relative;
-  z-index: 1;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: 0.3s;
+  
+  /* Flexbox pour que le bouton reste en bas */
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  /* On fixe une hauteur mini pour que toutes les cases soient identiques */
+  min-height: 280px; 
 }
 
-.projets .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 20px rgba(168,85,247,0.3);
+.projets .card h3 {
+  color: var(--color-accent);
+  margin-bottom: 10px;
+  /* On réserve de la place pour 2 lignes de titre pour éviter les décalages */
+  min-height: 3.5rem; 
+  display: flex;
+  align-items: center;
 }
 
-.projets .card.active {
-  transform: scale(1.3);
-  z-index: 10;
-  box-shadow: 0 0 40px rgba(168,85,247,0.5);
+.projets .card p {
+  /*flex-grow: 1; /* Pousse le contenu vers le bas */
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* --- ADAPTATION POUR ÉCRANS PLUS PETITS --- */
+/* Si l'écran est trop petit pour 4 colonnes (ex: tablettes) */
+@media (max-width: 1100px) {
+  .projets {
+    grid-template-columns: repeat(2, 1fr); /* Passe en 2x4 */
+  }
+}
+
+/* Si c'est un téléphone */
+@media (max-width: 600px) {
+  .projets {
+    grid-template-columns: 1fr; /* 1 seule colonne */
+  }
 }
 
 /* ----- FORMULAIRE ----- */
@@ -392,63 +425,161 @@ footer {
     gap: 1.5rem;
   }
 }
-/* OVERLAY FULL PAGE */
-#projetOverlay{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:#0b0b0f;
-  z-index:9999;
-  display:none;
-  overflow-y:auto;
-  animation:fadeIn 0.4s ease;
+/* --- CORRECTIF OVERLAY --- */
+#projetOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d0d1a; /* Fond très sombre pour faire ressortir le texte */
+  z-index: 10000;
+  display: none;
+  overflow-y: auto; 
+  overflow-x: hidden;
 }
 
-.overlay-content{
-  max-width:1000px;
-  margin:auto;
-  padding:60px 20px;
-  color:white;
+.overlay-content {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px; 
+  min-height: 100vh;
 }
 
-/* bouton fermer */
-.close{
-  position:fixed;
-  top:20px;
-  right:30px;
-  font-size:35px;
-  cursor:pointer;
-  color:#a855f7;
-  transition:0.3s;
+/* Organisation en deux colonnes */
+.project-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
 }
 
-.close:hover{
-  transform:scale(1.2);
+.main-text {
+  flex: 2.5;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
-/* contenu projet */
-.overlay-content h1{
-  color:#a855f7;
-  font-size:38px;
-  margin-bottom:20px;
+/* Sidebar d'infos rapide */
+.project-sidebar {
+  flex: 1;
+  background: rgba(168, 85, 247, 0.03);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  padding: 30px;
+  border-radius: 16px;
+  position: sticky;
+  top: 40px;
 }
 
-.overlay-content h2{
-  margin-top:35px;
-  color:#a855f7;
+/* Style des titres internes */
+.main-text h2 {
+  color: #a855f7;
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.overlay-content img{
-  width:100%;
-  max-width:700px;
-  margin-top:20px;
-  border-radius:10px;
-  border:1px solid #444;
+.main-text p {
+  margin-bottom: 20px;
 }
 
-@keyframes fadeIn{
-  from{opacity:0;}
-  to{opacity:1;}
+.main-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-text ul li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.main-text ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #a855f7;
+  font-weight: bold;
+}
+
+/* Bouton fermer */
+.close {
+  position: fixed;
+  top: 30px;
+  right: 50px;
+  font-size: 45px;
+  color: #a855f7;
+  cursor: pointer;
+  z-index: 10001;
+  transition: 0.3s;
+}
+
+.close:hover { transform: rotate(90deg); color: #fff; }
+
+@media (max-width: 900px) {
+  .project-wrapper { flex-direction: column; }
+  .close { right: 20px; top: 20px; }
+}
+
+/* Galerie dans l'overlay */
+.main-text img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 25px;
+  border: 1px solid #222;
+  cursor: zoom-in; /* Indique qu'on peut cliquer */
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.main-text img:hover {
+  transform: scale(1.02);
+  border-color: #a855f7;
+}
+
+/* Style du Zoom (Lightbox) */
+#zoomOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000000; /* Au-dessus de l'overlay projet */
+  cursor: zoom-out;
+}
+
+.zoomed-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+.close-zoom {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* --- RETIRER LE SELECTEUR DE THEME --- */
+.sidebar .theme-switch, 
+.sidebar .theme-toggle,
+.sidebar div:last-child { 
+  display: none !important; 
 }
