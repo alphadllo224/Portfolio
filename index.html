@@ -285,7 +285,7 @@
       </p>
 
       <div class="long">
-
+        
         <h4>Présentation</h4>
         <p>
           Lors de mon stage, j’ai participé à la création d’un site internet visant
@@ -387,59 +387,59 @@ function toggleCard(selected){
     <div class="card" onclick="openProjet('glpi')">
       <h3>Gestion du parc informatique - GLPI</h3>
       <p>Mise en place et utilisation de GLPI pour la gestion du parc et des tickets.</p>
+      <button class="btn-voir">Voir le projet</button>
     </div>
 
     <div class="card" onclick="openProjet('ad')">
       <h3>Administration Active Directory</h3>
       <p>Gestion des utilisateurs, groupes et GPO dans le domaine.</p>
+      <button class="btn-voir">Voir le projet</button>
     </div>
 
     <div class="card" onclick="openProjet('veeam')">
       <h3>Sauvegardes VEEAM</h3>
       <p>Restauration de données critiques.</p>
+      <button class="btn-voir">Voir le projet</button>
     </div>
 
     <div class="card" onclick="openProjet('depannage')">
       <h3>Dépannage informatique</h3>
       <p>Support technique utilisateurs.</p>
+      <button class="btn-voir">Voir le projet</button>
     </div>
 
     <div class="card" onclick="openProjet('NAS')">
       <h3>Migration de serveurs NAS</h3>
       <p>Migration de fichiers partagés.</p>
+      <button class="btn-voir">Voir le projet</button>
     </div>
 
     <div class="card" onclick="openProjet('nutanix')">
       <h3>Migration VMware vers Nutanix</h3>
       <p>Migration infrastructure virtualisée.</p>
+      <button class="btn-voir">Voir le projet</button>
     </div>
 
     <div class="card" onclick="openProjet('sites')">
       <h3>Création de sites internet</h3>
       <p>Sites vitrines et e-commerce.</p>
+      <button class="btn-voir">Voir le projet</button>
     </div>
 
     <div class="card" onclick="openProjet('wifi')">
       <h3>Déploiement bornes WiFi</h3>
       <p>Amélioration couverture réseau.</p>
+      <button class="btn-voir">Voir le projet</button>
     </div>
 
-  </div>
-
-</section>
+</div>
 
 
 <!-- ========================= -->
 <!-- OVERLAY PROJET -->
 <!-- ========================= -->
 
-<div id="projetOverlay">
-  <span class="close" onclick="closeProjet()">✕</span>
 
-  <div class="overlay-content">
-    <div id="projetDetail"></div>
-  </div>
-</div>
 
 
 <style>
@@ -549,461 +549,485 @@ function toggleCard(selected){
 <script>
 
 const projets = {
-
-glpi: `
-<h1>Gestion du parc informatique - GLPI</h1>
-
-<h2>Présentation du projet</h2>
-<p>Le projet consistait à utiliser GLPI pour gérer le parc informatique et suivre les demandes des utilisateurs au sein du service informatique du Centre François Baclesse. GLPI est un outil ITSM (IT Service Management) permettant de centraliser les incidents, les demandes de création de comptes et la gestion du matériel.
-</p>
-
-<h2>But et planification</h2>
-<p>L’objectif principal était de participer à la gestion des tickets et à l’administration du parc informatique. J’ai été chargé de traiter les tickets qui me revenaient, notamment pour la création de comptes pour les nouveaux arrivants et le suivi des incidents mineurs. Chaque ticket était traité selon les priorités définies par les techniciens et en coordination avec les besoins des utilisateurs.</p>
-
-<h2>Technologies utilisées</h2>
-<ul>
-<li>GLPI pour la gestion des tickets et du parc informatique</li>
-<li>Active Directory pour la création et gestion des comptes utilisateurs</li>
-<li>Serveur Web pour héberger l’application GLPI et gérer les accès</li>
-</ul>
-
-<h2>Réalisation technique</h2>
-<ul>
-<li>Traiter des demandes de création de comptes pour les nouveaux arrivants</li>
-<li>Gérer les inventaires matériels et organiser les déplacements ou remplacements d’équipements</li>
-<li>Suivre les incidents signalés par les salariés</li>
-</ul>
-
-<h2>Difficultés rencontrées et solutions</h2>
-<p>Certaines demandes étaient parfois imprécises ou urgentes, ce qui nécessitait de prioriser et clarifier les tickets avec les techniciens et les utilisateurs. J’ai appris à identifier rapidement les besoins et à proposer des solutions adaptées, tout en respectant la procédure ITSM et les bonnes pratiques de gestion des tickets.</p>
-
-<h2>Compétences acquises</h2>
-<p>Cette expérience m’a permis de développer plusieurs compétences clés :</p>
-<ul>
-<li>Traitement de tickets et suivi des incidents</li>
-<li>Coordination avec une équipe technique et communication professionnelle</li>
-<li>Compréhension du fonctionnement d’un service informatique dans un environnement réel</li>
-</ul>
-
-<h2>Photos du projet</h2>
-<img src="glpi.png">
-<img src="glpi tableau.png">
-`,
-
-ad: `
-<h1>Administration Active Directory</h1>
-
-<h2>Présentation du projet</h2>
-<p>Ce projet consistait à administrer Active Directory (AD) pour gérer les utilisateurs, groupes et postes du domaine du Centre François Baclesse. L’AD est un outil central permettant de contrôler l’accès aux ressources, d’organiser les utilisateurs et de sécuriser le système d’information.</p>
-
-<h2>But et planification</h2>
-<p>L’objectif était de participer à l’administration du domaine et à la mise en place de politiques de groupe (GPO) pour standardiser la configuration des postes. Mon travail comprenait :</p>
-<ul>
-<li>Création et organisation des comptes utilisateurs dans les OU appropriées</li>
-<li>Mise en place de GPO pour appliquer des configurations et sécuriser les postes</li>
-<li>Suivi des permissions et contrôle des accès réseau</li>
-</ul>
-
-<h2>Technologies utilisées</h2>
-<ul>
-<li>Active Directory pour gérer les utilisateurs et les groupes</li>
-<li>GPO (Group Policy Objects) pour automatiser la configuration et sécuriser le domaine</li>
-<li>Serveurs Windows pour l’hébergement de l’AD et des services associés</li>
-</ul>
-
-<h2>Réalisation technique</h2>
-<p>En collaboration avec les administrateurs systèmes, j’ai appris à :</p>
-<ul>
-<li>Créer et configurer des comptes utilisateurs dans les bonnes OU</li>
-<li>Déployer des GPO pour appliquer des restrictions et configurations standards sur les postes</li>
-<li>Suivre les permissions et intervenir lors d’incidents liés aux comptes utilisateurs</li>
-</ul>
-
-<h2>Difficultés rencontrées et solutions</h2>
-<p>Au début, comprendre la structure des OU et l’impact des GPO pouvait être complexe. J’ai donc travaillé avec les admins pour m’assurer que chaque modification était correctement appliquée, tout en testant les GPO sur des postes pilotes avant le déploiement global. Cette méthode m’a permis d’éviter les erreurs et de sécuriser l’environnement.</p>
-
-<h2>Compétences acquises</h2>
-<p>Cette expérience m’a permis de :</p>
-<ul>
-<li>Maîtriser la création et la gestion des comptes utilisateurs dans AD</li>
-<li>Comprendre l’organisation des OU et des groupes pour une gestion optimale</li>
-<li>Développer mes compétences en administration Windows Server et en gestion des accès</li>
-</ul>
-
-<h2>Photos du projet</h2>
-<img src="ad.png">
-<img src="AD inter.png">
-`,
-
-veeam: `
-<h1>Sauvegarde avec VEEAM</h1>
-
-<h2>Présentation du projet</h2>
-<p>Le projet consistait à utiliser le logiciel VEEAM pour restaurer des fichiers ou récupérer des versions précédentes des données au sein du Centre François Baclesse. VEEAM est une solution de sauvegarde et de restauration utilisée pour garantir la continuité des activités et la sécurité des informations.
-Cette mission s’inscrit directement dans la stratégie de PCA (Plan de Continuité d’Activité) et de PRA (Plan de Reprise d’Activité) du centre, afin de minimiser les interruptions en cas d’incident et de restaurer rapidement les données critiques.</p>
-
-<h2>But et planification</h2>
-<p>L’objectif principal était de comprendre et participer au processus de restauration de données, en suivant les procédures définies par les admins réseau et les plans de continuité :</p>
-<ul>
-<li>Identifier les fichiers et versions demandés par les utilisateurs</li>
-<li>Restaurer les données de manière sécurisée et rapide</li>
-<li>Vérifier l’intégrité et la disponibilité des fichiers restaurés</li>
-<li>Participer à la documentation des procédures dans le cadre du PRA</li>
-</ul>
-
-<h2>Technologies utilisées</h2>
-<ul>
-<li>VEEAM Backup</li>
-</ul>
-
-<h2>Réalisation technique</h2>
-<p>Restauration fichiers et versions.</p>
-<ul>
-<li>Identifier et localiser les fichiers ou versions anciennes demandés par les utilisateurs</li>
-<li>Restaurer les fichiers depuis les sauvegardes planifiées sur le serveur Windows</li>
-<li>Vérifier l’intégrité des données et valider la restauration</li>
-<li>Suivre les procédures du PCA/PRA pour garantir la continuité de service</li>
-</ul>
-
-<h2>Difficultés rencontrées et solutions</h2>
-<p>Certaines restaurations étaient complexes car il fallait retrouver des versions très anciennes ou spécifiques. J’ai appris à naviguer efficacement dans l’interface de VEEAM et à collaborer avec les administrateurs pour assurer que les restaurations respectaient les exigences du PRA.</p>
-
-<h2>Compétences acquises</h2>
-<ul>
-<li>Compréhension du rôle des sauvegardes dans la continuité des activités et dans un PRA</li>
-<li>Maîtrise du logiciel VEEAM pour la restauration de fichiers</li>
-<li>Connaissance pratique des serveurs Windows et de la gestion des données critiques</li>
-</ul>
-
-<h2>Photos du projet</h2>
-<img src="veeam.png">
-`,
-
-depannage: `
-<h1>Dépannage informatique</h1>
-
-<h2>Présentation du projet</h2>
-<p>Dans le cadre de mon alternance au Centre François Baclesse, j’ai participé aux activités de support informatique aux côtés des techniciens du service IT. Cette mission consistait à intervenir auprès des employés afin de résoudre les incidents informatiques rencontrés sur leurs postes de travail et garantir la continuité de leurs activités professionnelles.</p>
-
-<h2>But et planification</h2>
-<p>L’objectif principal était d’assurer le bon fonctionnement des postes informatiques des utilisateurs en répondant rapidement aux demandes de support. Les interventions étaient réalisées à la suite d’appels ou de tickets signalant différents types de problèmes techniques.</p>
-
-<h2>Technologies utilisées</h2>
-<ul>
-<li>Environnement Windows</li>
-<li>Active Directory</li>
-<li>GLPI (gestion des tickets)</li>
-<li>Logiciels métiers hospitaliers (DxCare)</li>
-<li>Postes clients et périphériques informatiques</li>
-</ul>
-
-<h2>Réalisation technique</h2>
-<ul>
-<li>Prise en charge des demandes utilisateurs via le système de tickets</li>
-<li>Diagnostic des incidents matériels et logiciels</li>
-<li>Remplacement de périphériques défectueux (souris, clavier, etc.)</li>
-<li>Installation et mise à jour de logiciels</li>
-<li>Correction de bugs et résolution de problèmes système</li>
-<li>Assistance directe auprès des utilisateurs sur site</li>
-</ul>
-
-<h2>Difficultés rencontrées et solutions</h2>
-<p>Le principal défi était la gestion des priorités dans un environnement hospitalier, où certaines interventions devaient être réalisées très rapidement afin de ne pas impacter la prise en charge des patients. Une bonne organisation, une communication efficace avec les utilisateurs et une analyse rapide des problèmes ont permis d’assurer des dépannages efficaces tout en maintenant la continuité du service.</p>
-
-<h2>Compétences acquises</h2>
-<p>Cette expérience m’a permis de développer plusieurs compétences clés :</p>
-<ul>
-<li>Diagnostic et résolution d’incidents informatiques</li>
-<li>Support utilisateurs en environnement professionnel</li>
-<li>Gestion des priorités et des urgences</li>
-<li>Travail en équipe dans un contexte exigeant</li>
-<li>Organisation et réactivité en environnement hospitalier</li>
-</ul>
-
-<h2>Photos du projet</h2>
-<img src="depannage.png">
-<img src="glpi tableau.png">
-`,
-
-NAS: `
-<h1>Migration de serveurs NAS</h1>
-
-<h2>Présentation du projet</h2>
-<p>Le projet consistait à migrer les données et les services de plusieurs anciens NAS vers une nouvelle infrastructure basée sur deux serveurs Synology configurés en haute disponibilité.
-L’objectif était d’améliorer la fiabilité du stockage, la continuité de service et la gestion centralisée des données au sein du Centre François Baclesse.
-
-Cette migration s’inscrivait dans une démarche d’évolution de l’infrastructure informatique afin de garantir une meilleure disponibilité des fichiers utilisateurs et une sécurité renforcée des données.</p>
-
-<h2>But et planification</h2>
-<p>L’objectif principal était de remplacer les anciens NAS pour avoir plus de stockage, tout en assurant une migration transparente pour les utilisateurs et sans interruption majeure de service.
-  Les étapes principales du projet:</p>
-<ul>
-<li>Préparer les nouveaux serveurs Synology</li>
-<li>Mettre en place un cluster haute disponibilité (HA)</li>
-<li>Configurer le Heartbeat entre les deux serveurs</li>
-<li>Migrer l’ensemble des données depuis les anciens NAS</li>
-<li>Recréer les accès utilisateurs et permissions</li>
-<li>Intégrer les nouveaux équipements dans l’infrastructure réseau existante</li>
-<li>Tester la continuité de service et la bascule automatique</li>
-</ul>
-
-<h2>Technologies utilisées</h2>
-<ul>
-<li>NAS Synology (DSM)</li>
-<li>Synology High Availability (SHA)</li>
-<li>IPAM (gestion des adresses IP)</li>
-<li>SMTP (notifications système)</li>
-<li>NTP (synchronisation horaire)</li>
-<li>Réseau d’entreprise Windows</li>
-<li>Rsync (pour le transfert de fichier)</li>
-</ul>
-
-<h2>Réalisation technique</h2>
-<p>Mise en place de l’infrastructure :</p>
-<ul>
-<li>Installation et configuration des deux serveurs Synology</li>
-<li>Création d’un cluster haute disponibilité</li>
-<li>Configuration du Heartbeat pour assurer la communication entre les deux NAS</li>
-<li>Tests de bascule automatique en cas de panne</li>
-</ul>
-
-<p>Configuration réseau :</p>
-<ul>
-<li>Réservation d’une nouvelle adresse IP via l’IPAM de l’entreprise</li>
-<li>Configuration réseau des NAS</li>
-<li>Intégration dans le domaine Active Directory</li>
-</ul>
-
-<p>Migration des données :</p>
-<ul>
-<li>Copie complète des données depuis les anciens NAS vers la nouvelle infrastructure</li>
-<li>Vérification de l’intégrité des fichiers migrés</li>
-<li>Organisation et validation des dossiers partagés</li>
-</ul>
-
-<p>Gestion des accès utilisateurs :</p>
-<ul>
-<li>Recréation des droits d’accès aux dossiers partagés</li>
-<li>Attribution des permissions selon les groupes Active Directory</li>
-<li>Tests d’authentification utilisateurs</li>
-</ul>
-
-<h2>Difficultés rencontrées et solutions</h2>
-<p>La migration a principalement présenté des défis liés au transfert d’un volume important de données et à la reconfiguration des droits d’accès utilisateurs sans perturber le service. La mise en place du cluster haute disponibilité nécessitait également une configuration précise pour garantir une bascule fonctionnelle entre les serveurs. Des tests réguliers et des vérifications de l’intégrité des données ont permis d’assurer une migration fiable et sécurisée.</p>
-
-<h2>Compétences acquises</h2>
-<ul>
-<li>Mise en place d’une infrastructure haute disponibilité</li>
-<li>Configuration d’un cluster Synology et du Heartbeat</li>
-<li>Migration de données critiques en environnement professionnel</li>
-<li>Gestion avancée des permissions et accès utilisateurs</li>
-<li>Intégration d’équipements dans un domaine Active Directory</li>
-<li>Configuration de services réseau (SMTP, NTP, IPAM)</li>
-</ul>
-
-<h2>Photos du projet</h2>
-<img src="Nas.png">
-<img src="nas dossier partagé.png">
-<img src="synology.jpeg">
-`,
-
-nutanix: `
-<h1>Migration VMware vers Nutanix</h1>
-
-<h2>Présentation du projet</h2>
-<p>Dans le cadre de l’évolution de l’infrastructure informatique du Centre François Baclesse, un projet de migration de la plateforme de virtualisation VMware vers une solution Nutanix a été lancé afin d’améliorer la performance, la scalabilité et la résilience du système d’information.
-
-Le projet a été réalisé en collaboration avec l’entreprise Square, chargée de la fourniture des équipements et des solutions logicielles Nutanix. J’ai participé aux différentes étapes techniques aux côtés des administrateurs systèmes et réseaux.</p>
-
-<h2>But et planification</h2>
-<p>L’objectif principal était de mettre en place une nouvelle infrastructure hyperconvergée Nutanix tout en assurant une transition progressive depuis l’environnement VMware existant, sans interruption des services critiques.</p> 
-<p>Les principales étapes du projet :</p>
-<ul>
-<li>Installation physique des nouveaux équipements</li>
-<li>Mise en place d’une infrastructure redondée sur deux salles de production</li>
-<li>Préparation de l’environnement Nutanix</li>
-<li>Migration progressive des machines virtuelles</li>
-<li>Documentation et schématisation de l’infrastructure</li>
-</ul>
-
-<h2>Technologies utilisées</h2>
-<ul>
-<li>Nutanix (AHV)</li>
-<li>VMware vSphere</li>
-<li>Infrastructure hyperconvergée</li>
-<li>Switchs réseau d’entreprise</li>
-<li>Schémas d’infrastructure réseau</li>
-</ul>
-
-<h2>Réalisation technique</h2>
-<p>Installation matérielle:</p>
-<ul>
-<li>Rack des serveurs Nutanix (environ une dizaine)</li>
-<li>Installation et câblage des switchs réseau</li>
-<li>Déploiement des équipements dans deux salles de production distinctes pour assurer la redondance</li>
-</ul>
-
-<p>Mise en place de l’infrastructure:</p>
-<ul>
-<li>Participation à la préparation de l’environnement Nutanix</li>
-<li>Vérification des connectiques réseau et alimentation</li>
-<li>Collaboration avec les administrateurs systèmes lors du déploiement</li>
-</ul>
-
-<p>Migration des machines virtuelles:</p>
-<ul>
-<li>Migration progressive des VM et serveurs depuis VMware vers Nutanix</li>
-<li>Suivi de la compatibilité des systèmes existants</li>
-<li>Participation aux tests de fonctionnement après migration</li>
-</ul>
-
-<p>Documentation technique:</p>
-<ul>
-<li>Création d’un schéma d’infrastructure des baies informatiques</li>
-<li>Représentation des équipements et de leurs connectiques dans les deux salles</li>
-<li>Amélioration de la visibilité globale de l’architecture pour l’équipe IT</li>
-</ul>
-
-<h2>Difficultés rencontrées et solutions</h2>
-<p>La principale difficulté concernait la migration de certaines anciennes machines virtuelles VMware non totalement compatibles avec l’environnement Nutanix, rendant leur transfert plus complexe et nécessitant des adaptations spécifiques. La migration a donc été réalisée progressivement afin de sécuriser chaque étape et limiter les risques pour les services en production.</p>
-
-<h2>Compétences acquises</h2>
-<p>Cette expérience m’a permis de développer plusieurs compétences clés :</p>
-<ul>
-<li>Découverte d’une infrastructure hyperconvergée (Nutanix)</li>
-<li>Installation physique d’équipements en datacenter (rack & câblage)</li>
-<li>Compréhension d’un projet de migration d’infrastructure à grande échelle</li>
-<li>Virtualisation et migration de machines virtuelles</li>
-<li>Lecture et conception de schémas d’infrastructure</li>
-</ul>
-
-<h2>Photos du projet</h2>
-<img src="schéma NUTA infra.png">
-<img src="schéma infra switchs.png">
-<img src="vsphere.png">
-`,
-
-sites: `
-<h1>Création de sites internet</h1>
-
-<h2>Présentation du projet</h2>
-<p>En parallèle de ma formation, j’ai réalisé plusieurs projets personnels de création de sites internet pour des particuliers, des amis et des petites activités locales. Ces projets consistaient principalement à concevoir des sites vitrines ainsi que des boutiques en ligne afin d’améliorer leur présence sur internet et de faciliter la vente de leurs produits ou services.
-
-Ces expériences m’ont permis de découvrir concrètement le cycle complet de création d’un site web, depuis l’analyse du besoin client jusqu’à la mise en ligne du site.</p>
-
-<h2>But et planification</h2>
-<p>En parallèle de ma formation, j’ai réalisé plusieurs projets personnels de création de sites internet pour des particuliers, des amis et des petites activités locales. Ces projets consistaient principalement à concevoir des sites vitrines ainsi que des boutiques en ligne afin d’améliorer leur présence sur internet et de faciliter la vente de leurs produits ou services.
-
-Ces expériences m’ont permis de découvrir concrètement le cycle complet de création d’un site web, depuis l’analyse du besoin client jusqu’à la mise en ligne du site.</p>
-<ul>
-<li>Analyse des besoins clients</li>
-<li>Conception de la structure du site</li>
-<li>Développement et personnalisation</li>
-<li>Tests et mise en production</li>
-<li>Livraison et accompagnement utilisateur</li>
-</ul>
-
-<h2>Technologies utilisées</h2>
-<ul>
-<li>HTML / CSS</li>
-<li>Python</li>
-<li>Java</li>
-<li>Shopify (e-commerce)</li>
-<li>Visual Studio Code</li>
-</ul>
-
-<h2>Réalisation technique</h2>
-<ul>
-<li>Création de sites vitrines pour présenter des activités professionnelles</li>
-<li>Mise en place de boutiques en ligne via Shopify</li>
-<li>Développement et personnalisation des pages web</li>
-<li>Organisation du contenu et optimisation de la navigation</li>
-<li>Mise en ligne et configuration des sites</li>
-<li>Vente de sites web réalisés pour différents clients</li>
-</ul>
-
-<h2>Difficultés rencontrées et solutions</h2>
-<p>La principale difficulté était de bien comprendre les attentes des clients, qui n’avaient pas toujours une vision claire de leur projet ou de leurs besoins réels. Il fallait donc poser les bonnes questions, proposer des solutions adaptées et ajuster régulièrement le site afin de correspondre à leurs attentes tout en restant techniquement réalisable.</p>
-
-<h2>Compétences acquises</h2>
-<p>Cette expérience m’a permis de développer plusieurs compétences clés :</p>
-<ul>
-<li>Développement web front-end</li>
-<li>Compréhension du besoin client</li>
-<li>Gestion de projet web</li>
-<li>Communication avec des clients non techniques</li>
-<li>Autonomie et organisation</li>
-</ul>
-
-<h2>Photos du projet</h2>
-<img src="Site 2.png">
-<img src="Site creer.png">
-`,
-
-wifi: `
-<h1>Déploiement bornes wifi</h1>
-
-<h2>Présentation du projet</h2>
-<p>Dans le cadre de l’amélioration du réseau sans fil du Centre François Baclesse, un projet de remplacement d’environ cinquante bornes Wi-Fi a été mis en place afin de résoudre des problèmes de lenteur du réseau et d’instabilité de la connexion rencontrés par les utilisateurs dans les différents étages de l’établissement.
-
-Ce projet visait à moderniser l’infrastructure Wi-Fi en déployant de nouvelles bornes Cisco offrant de meilleures performances et une gestion optimisée de la mobilité des utilisateurs.
-</p>
-
-<h2>But et planification</h2>
-<p>L’objectif principal était d’améliorer la couverture réseau, le débit et la stabilité des connexions Wi-Fi, notamment lors des déplacements des utilisateurs entre différentes zones du bâtiment.</p>
-<ul>
-<li>Remplacement progressif des anciennes bornes Wi-Fi</li>
-<li>Installation des nouvelles bornes Cisco</li>
-<li>Mise à jour et configuration des équipements</li>
-<li>Tests de connectivité et de performance réseau</li>
-</ul>
-
-<h2>Technologies utilisées</h2>
-<ul>
-<li>Bornes Wi-Fi Cisco</li>
-<li>Switchs réseau d’entreprise</li>
-<li>Infrastructure réseau hospitalière</li>
-<li>Réseau sans fil professionnel (Wi-Fi entreprise)</li>
-</ul>
-
-<h2>Réalisation technique</h2>
-<ul>
-<li>Connexion des nouvelles bornes Wi-Fi aux switchs réseau</li>
-<li>Mise à jour des bornes Cisco avant leur déploiement</li>
-<li>Vérification du bon fonctionnement réseau après installation</li>
-<li>Participation aux tests de couverture et de stabilité du Wi-Fi</li>
-<li>Collaboration avec l’équipe réseau lors du déploiement dans les étages</li>
-</ul>
-
-<h2>Difficultés rencontrées et solutions</h2>
-<p>Le principal défi provenait des problèmes existants de saturation réseau et de mauvaise transition entre les bornes Wi-Fi, ce qui provoquait des pertes de connexion lors des déplacements des utilisateurs. Le remplacement par des bornes plus performantes et leur mise à jour avant installation ont permis d’améliorer progressivement la qualité du réseau et la continuité de connexion.</p>
-
-<h2>Compétences acquises</h2>
-<p>Cette expérience m’a permis de développer plusieurs compétences clés :</p>
-<ul>
-<li>Déploiement d’équipements réseau en environnement professionnel</li>
-<li>Configuration et mise à jour de bornes Wi-Fi Cisco</li>
-<li>Compréhension des problématiques de couverture Wi-Fi</li>
-<li>Travail en équipe sur un projet d’infrastructure réseau</li>
-<li>Diagnostic de problèmes de performance réseau</li>
-</ul>
-
-<h2>Photos du projet</h2>
-<img src="MAJ brones.jpeg">
-<img src="Putty bornes wifi.png">
-`,
+  glpi: `
+    <h1 class="project-title">Gestion du parc informatique & ITSM - GLPI</h1>
+    <div class="project-wrapper">
+      <div class="main-text">
+        <h2><span class="step-num">01.</span> Présentation du projet</h2>
+        <p>Ce projet consiste à exploiter la solution <strong>GLPI</strong> (Gestionnaire Libre de Parc Informatique) au sein du service informatique du Centre François Baclesse. Au-delà d'un simple inventaire, GLPI sert de socle à la méthodologie <strong>ITSM</strong> (IT Service Management), permettant de centraliser les incidents, les demandes de création de comptes et la gestion du cycle de vie du matériel informatique dans un environnement hospitalier exigeant.</p>
+
+        <h2><span class="step-num">02.</span> But et Planification</h2>
+        <p>L’objectif principal était de participer activement à la gestion des tickets et à l’administration du parc. Ma mission incluait :
+          <br>• <strong>Traitement des sollicitations :</strong> Prise en charge des tickets attribués (incidents mineurs, demandes de services).
+          <br>• <strong>Gestion des identités :</strong> Création de comptes pour les nouveaux arrivants en coordination avec les RH.
+          <br>• <strong>Priorisation :</strong> Traitement des demandes selon les niveaux d'urgence définis par les techniciens titulaires pour garantir la continuité des soins.</p>
+
+        <h2><span class="step-num">03.</span> Réalisation technique</h2>
+        <ul>
+          <li><strong>Gestion des Tickets :</strong> Qualification, assignation et résolution d'incidents N1/N2 via l'interface technicien.</li>
+          <li><strong>Provisioning :</strong> Création et déploiement de comptes utilisateurs synchronisés avec l'<strong>Active Directory</strong>.</li>
+          <li><strong>Asset Management :</strong> Inventaire automatisé, suivi du parc (PC, écrans, imprimantes réseau) et organisation des mouvements de matériel (remplacements/déplacements).</li>
+          <li><strong>Maintenance Applicative :</strong> Surveillance du serveur Web hébergeant l'instance GLPI pour garantir l'accès permanent à l'outil.</li>
+        </ul>
+
+        <h2><span class="step-num">04.</span> Difficultés & Solutions</h2>
+        <p>La principale difficulté résidait dans le traitement de demandes parfois imprécises ou marquées par l'urgence hospitalière. Pour y remédier, j'ai instauré une phase de <strong>clarification systématique</strong> avec les utilisateurs et les techniciens. Cette approche m'a permis d'identifier rapidement les besoins réels et de proposer des solutions adaptées, tout en respectant les bonnes pratiques ITSM.</p>
+
+        <h2><span class="step-num">05.</span> Analyse et Retours</h2>
+        <p>Cette expérience a été déterminante pour comprendre le fonctionnement d'un service informatique en conditions réelles. J'ai développé des compétences clés en communication professionnelle et en coordination d'équipe, tout en apprenant l'importance de la documentation technique pour éviter la perte d'informations critiques.</p>
+
+        <h2><span class="step-num">06.</span> Galerie du projet</h2>
+        <p class="zoom-info">(Cliquez sur une image pour l'agrandir)</p>
+        <div class="project-gallery">
+          <img src="glpi.png" onclick="zoomImage(this)" alt="Interface GLPI">
+          <img src="glpi tableau.png" onclick="zoomImage(this)" alt="Tableau de bord GLPI">
+        </div>
+      </div>
+
+      <aside class="project-sidebar">
+        <div class="sidebar-item"><h4>⏱ Temps</h4><p>En continu (Alternance)</p></div>
+        <div class="sidebar-item">
+          <h4>🛠 Technologies</h4>
+          <p>
+            <span class="badge">GLPI</span> 
+            <span class="badge">Active Directory</span> 
+            <span class="badge">Apache/Web</span>
+            <span class="badge">Windows</span>
+          </p>
+        </div>
+        <div class="sidebar-item">
+          <h4>🎓 Compétences</h4>
+          <p>Support N1/N2, Gestion d'actifs, Coordination d'équipe, Communication pro</p>
+        </div>
+      </aside>
+    </div>
+  `,
+
+ ad: `
+    <h1 class="project-title">Administration des Services de Domaine (AD DS)</h1>
+    <div class="project-wrapper">
+      <div class="main-text">
+        <h2><span class="step-num">01.</span> Présentation du projet</h2>
+        <p>L'administration de l'<strong>Active Directory</strong> constitue le cœur de la sécurité logique du Centre François Baclesse. Ce projet consiste à administrer l'annuaire pour gérer l'intégralité des utilisateurs, des groupes et des postes de travail du domaine. L'AD est l'outil central permettant de contrôler l'accès aux ressources, d'organiser les objets et de sécuriser le système d'information de l'établissement.</p>
+
+        <h2><span class="step-num">02.</span> But et Planification</h2>
+        <p>L’objectif principal est d’industrialiser la gestion des identités et de sécuriser les terminaux de travail via une structure rigoureuse d'<strong>Unités d'Organisation (OU)</strong>. Mon travail au sein de l'équipe système comprenait :
+          <br>• <strong>Standardisation :</strong> Mise en place de politiques de groupe (GPO) pour uniformiser la configuration des postes.
+          <br>• <strong>Gouvernance :</strong> Création et organisation des comptes selon la hiérarchie et les services du Centre.
+          <br>• <strong>Contrôle :</strong> Suivi des permissions et contrôle des accès réseau selon le principe du moindre privilège.</p>
+
+        <h2><span class="step-num">03.</span> Réalisation technique</h2>
+        <ul>
+          <li><strong>Gestion du cycle de vie :</strong> Création, configuration et désactivation des comptes utilisateurs dans les OU appropriées (entrées/sorties de personnel).</li>
+          <li><strong>Déploiement de GPO :</strong> Configuration de restrictions de sécurité, mappage automatique de lecteurs réseaux et déploiement de certificats ou de fonds d'écran standards.</li>
+          <li><strong>Support & Maintenance :</strong> Intervention sur les incidents liés aux comptes (verrouillages, pertes d'accès) et nettoyage des objets obsolètes pour optimiser la réplication.</li>
+          <li><strong>Administration Windows Server :</strong> Utilisation des outils d'administration système pour surveiller la santé des contrôleurs de domaine.</li>
+        </ul>
+
+        <h2><span class="step-num">04.</span> Difficultés & Solutions</h2>
+        <p>Comprendre l'héritage des GPO et l'arborescence complexe des OU a été un défi initial. Pour sécuriser l'environnement de production, j'ai adopté une méthodologie rigoureuse : chaque modification était systématiquement validée par les administrateurs et testée sur des <strong>postes pilotes</strong> (postes de test) avant un déploiement global. J'ai également utilisé l'outil "Résultat de stratégie de groupe" pour diagnostiquer et résoudre les conflits de paramètres.</p>
+
+        <h2><span class="step-num">05.</span> Analyse et Compétences</h2>
+        <p>Cette immersion dans l'administration Windows Server m'a permis de maîtriser la gestion des accès et de comprendre l'importance d'une organisation logique pour l'exploitation. J'ai acquis une solide base en sécurité système et en automatisation de configuration de parc informatique.</p>
+
+        <h2><span class="step-num">06.</span> Galerie du projet</h2>
+        <p class="zoom-info">(Cliquez sur une image pour l'agrandir)</p>
+        <div class="project-gallery">
+          <img src="ad.png" onclick="zoomImage(this)" alt="Console Active Directory">
+          <img src="AD inter.png" onclick="zoomImage(this)" alt="Interface de gestion AD">
+        </div>
+      </div>
+
+      <aside class="project-sidebar">
+        <div class="sidebar-item"><h4>⏱ Temps</h4><p>Missions quotidiennes</p></div>
+        <div class="sidebar-item">
+          <h4>🛠 Technologies</h4>
+          <p>
+            <span class="badge">Windows Server</span> 
+            <span class="badge">GPO</span> 
+            <span class="badge">DNS/DHCP</span>
+            <span class="badge">RSAT</span>
+          </p>
+        </div>
+        <div class="sidebar-item">
+          <h4>🎓 Compétences</h4>
+          <p>Administration Système, Sécurité Logique, Gouvernance des identités, Troubleshooting</p>
+        </div>
+      </aside>
+    </div>
+  `,
+
+  veeam: `
+    <h1 class="project-title">Sauvegarde et Restauration - VEEAM Backup</h1>
+    <div class="project-wrapper">
+      <div class="main-text">
+        <h2><span class="step-num">01.</span> Présentation du projet</h2>
+        <p>La protection des données de santé est une obligation légale et une priorité absolue au Centre François Baclesse. Ce projet consiste à utiliser la solution <strong>VEEAM Backup & Replication</strong> pour garantir la disponibilité des informations. Cette mission s’inscrit directement dans la stratégie de <strong>PCA</strong> (Plan de Continuité d’Activité) et de <strong>PRA</strong> (Plan de Reprise d’Activité) de l'établissement.</p>
+
+        <h2><span class="step-num">02.</span> But et Planification</h2>
+        <p>L’objectif principal était de maîtriser le processus de restauration pour minimiser les interruptions de service. Sous la supervision des administrateurs réseau, mes missions comprenaient :
+          <br>• <strong>Identification :</strong> Localiser précisément les fichiers ou versions spécifiques demandés par les utilisateurs.
+          <br>• <strong>Réactivité :</strong> Restaurer les données de manière sécurisée et rapide pour respecter les objectifs de temps de récupération (<strong>RTO</strong>).
+          <br>• <strong>Conformité :</strong> Vérifier l’intégrité des fichiers restaurés et documenter les interventions selon les procédures du PRA.</p>
+
+        <h2><span class="step-num">03.</span> Réalisation technique</h2>
+        <ul>
+          <li><strong>Restauration granulaire :</strong> Identification et récupération d'objets ou de versions anciennes de documents directement depuis les sauvegardes planifiées sur serveur Windows.</li>
+          <li><strong>Vérification des Jobs :</strong> Monitoring des rapports de sauvegarde pour s'assurer de la réussite des points de restauration quotidiens.</li>
+          <li><strong>Gestion des versions :</strong> Navigation dans l'historique des sauvegardes pour répondre aux demandes de "retour arrière" suite à des erreurs de manipulation ou des corruptions de fichiers.</li>
+          <li><strong>Validation d'intégrité :</strong> Tests de bon fonctionnement des fichiers restaurés avant remise à disposition des utilisateurs.</li>
+        </ul>
+
+        <h2><span class="step-num">04.</span> Difficultés & Solutions</h2>
+        <p>La complexité résidait parfois dans la recherche de versions très anciennes ou de fichiers aux noms ambigus. Pour résoudre cela, j'ai appris à naviguer expertement dans l'arborescence de l'interface VEEAM et à collaborer étroitement avec les administrateurs pour identifier les bons points de restauration (Restore Points). Cette rigueur garantit que les restaurations respectent scrupuleusement les exigences de sécurité du Centre.</p>
+
+        <h2><span class="step-num">05.</span> Analyse et Compétences</h2>
+        <p>Ce projet m'a sensibilisé à la règle critique du <strong>3-2-1</strong> (3 copies, 2 supports, 1 hors site). J'ai acquis une compréhension pratique du rôle vital des sauvegardes dans la survie d'un système d'information hospitalier et une maîtrise technique de l'outil leader du marché.</p>
+
+        <h2><span class="step-num">06.</span> Galerie du projet</h2>
+        <p class="zoom-info">(Cliquez sur une image pour l'agrandir)</p>
+        <div class="project-gallery">
+          <img src="veeam.png" onclick="zoomImage(this)" alt="Console VEEAM Backup">
+        </div>
+      </div>
+
+      <aside class="project-sidebar">
+        <div class="sidebar-item"><h4>⏱ Temps</h4><p>Support ponctuel</p></div>
+        <div class="sidebar-item">
+          <h4>🛠 Technologies</h4>
+          <p>
+            <span class="badge">VEEAM Backup</span> 
+            <span class="badge">Windows Server</span> 
+            <span class="badge">Stockage</span>
+            <span class="badge">PRA/PCA</span>
+          </p>
+        </div>
+        <div class="sidebar-item">
+          <h4>🎓 Compétences</h4>
+          <p>Protection des données, Continuité d'activité, Restauration granulaire, Gestion des risques</p>
+        </div>
+      </aside>
+    </div>
+  `,
+
+  depannage: `
+    <h1 class="project-title">Support de Proximité et Maintien Opérationnel</h1>
+    <div class="project-wrapper">
+      <div class="main-text">
+        <h2><span class="step-num">01.</span> Présentation du projet</h2>
+        <p>Dans le cadre de mon alternance au Centre François Baclesse, j’ai assuré le support informatique de proximité aux côtés de l’équipe technique. Cette mission consiste à garantir le <strong>Maintien en Condition Opérationnelle (MCO)</strong> des postes de travail. Dans un environnement hospitalier, le lien direct entre la DSI et les utilisateurs finaux est vital pour assurer la continuité des soins et des activités administratives.</p>
+
+        <h2><span class="step-num">02.</span> But et Planification</h2>
+        <p>L’objectif principal est de minimiser l'impact des pannes sur le parcours de soin en répondant rapidement aux sollicitations (appels ou tickets GLPI). Mon intervention visait à :
+          <br>• <strong>Réactivité :</strong> Assurer le bon fonctionnement des postes de travail pour éviter tout ralentissement de la prise en charge patient.
+          <br>• <strong>Standardisation :</strong> Garantir que chaque poste reste conforme aux normes de sécurité et de configuration de l'établissement.
+          <br>• <strong>Priorisation :</strong> Identifier les urgences critiques (ex: blocage du logiciel métier <strong>DxCare</strong> en service de soin) par rapport aux incidents mineurs.</p>
+
+        <h2><span class="step-num">03.</span> Réalisation technique</h2>
+        <ul>
+          <li><strong>Diagnostic & Troubleshooting :</strong> Analyse des incidents matériels et logiciels selon une méthodologie par élimination (Modèle OSI).</li>
+          <li><strong>Hardware Support :</strong> Diagnostic et remplacement de composants ou périphériques défectueux (unités centrales, écrans, imprimantes réseau, lecteurs de cartes).</li>
+          <li><strong>Software & Système :</strong> Installation, mise à jour de suites logicielles et résolution de conflits système sous environnement <strong>Windows</strong>.</li>
+          <li><strong>Assistance métier :</strong> Support spécifique sur les outils hospitaliers et accompagnement des utilisateurs dans l'utilisation de leurs outils numériques.</li>
+        </ul>
+
+        <h2><span class="step-num">04.</span> Difficultés & Solutions</h2>
+        <p>Le défi majeur réside dans la gestion du stress et des priorités absolues liées au milieu médical. Pour y répondre, j'ai développé une communication efficace et rassurante auprès des utilisateurs. Une analyse rapide, couplée à une organisation rigoureuse en coordination avec l'équipe IT, m'a permis d'assurer des dépannages efficaces sans perturber la continuité du service médical.</p>
+
+        <h2><span class="step-num">05.</span> Analyse et Compétences</h2>
+        <p>Cette expérience a renforcé mon autonomie technique et mes <strong>soft skills</strong>. J'ai appris l'importance de la pédagogie envers les utilisateurs et la nécessité d'une grande réactivité dans un contexte professionnel exigeant et critique.</p>
+
+        <h2><span class="step-num">06.</span> Galerie du projet</h2>
+        <p class="zoom-info">(Cliquez sur une image pour l'agrandir)</p>
+        <div class="project-gallery">
+          <img src="depannage.png" onclick="zoomImage(this)" alt="Intervention de dépannage">
+          <img src="glpi tableau.png" onclick="zoomImage(this)" alt="Suivi des tickets de support">
+        </div>
+      </div>
+
+      <aside class="project-sidebar">
+        <div class="sidebar-item"><h4>⏱ Temps</h4><p>Quotidien (Alternance)</p></div>
+        <div class="sidebar-item">
+          <h4>🛠 Technologies</h4>
+          <p>
+            <span class="badge">Windows 10/11</span> 
+            <span class="badge">Matériel IT</span> 
+            <span class="badge">DxCare</span>
+            <span class="badge">GLPI</span>
+          </p>
+        </div>
+        <div class="sidebar-item">
+          <h4>🎓 Compétences</h4>
+          <p>Diagnostic, Relation client, Gestion des urgences, Troubleshooting Hardware/Software</p>
+        </div>
+      </aside>
+    </div>
+  `,
+
+  NAS: `
+    <h1 class="project-title">Infrastructure de Stockage Haute Disponibilité (NAS)</h1>
+    <div class="project-wrapper">
+      <div class="main-text">
+        <h2><span class="step-num">01.</span> Présentation du projet</h2>
+        <p>Ce projet consistait à migrer les services de plusieurs anciens serveurs NAS vers une nouvelle architecture centralisée au Centre François Baclesse. L’enjeu était de remplacer un matériel vieillissant par deux serveurs <strong>Synology</strong> configurés en <strong>Cluster High Availability (SHA)</strong>, afin d'éliminer tout point de défaillance unique (SPOF) et de renforcer la sécurité des données hospitalières.</p>
+
+        <h2><span class="step-num">02.</span> But et Planification</h2>
+        <p>L’objectif était de doubler la capacité de stockage tout en assurant une migration transparente pour les utilisateurs. Le projet a été planifié en plusieurs phases critiques :
+          <br>• <strong>Préparation :</strong> Configuration matérielle et logicielle des unités Synology (DSM).
+          <br>• <strong>Résilience :</strong> Mise en place du cluster HA et configuration du lien <strong>Heartbeat</strong>.
+          <br>• <strong>Intégration Réseau :</strong> Réservation d'IP via l'<strong>IPAM</strong>, synchronisation <strong>NTP</strong> et alertes <strong>SMTP</strong>.
+          <br>• <strong>Migration :</strong> Transfert massif des données et bascule des accès utilisateurs.</p>
+
+        <h2><span class="step-num">03.</span> Réalisation technique</h2>
+        <ul>
+          <li><strong>Mise en grappe (SHA) :</strong> Création du cluster de haute disponibilité assurant une réplication en temps réel entre le serveur actif et le passif.</li>
+          <li><strong>Migration de données :</strong> Utilisation du protocole <strong>Rsync</strong> pour garantir l'intégrité des fichiers lors du transfert depuis l'ancienne infrastructure.</li>
+          <li><strong>Services Réseau :</strong> Configuration du serveur de messagerie pour les notifications système et intégration complète au domaine <strong>Active Directory</strong>.</li>
+          <li><strong>Gestion des Droits :</strong> Recréation des partages SMB et application granulaire des permissions (ACL) basées sur les groupes de sécurité du domaine.</li>
+        </ul>
+
+        <h2><span class="step-num">04.</span> Difficultés & Solutions</h2>
+        <p>Le principal défi a été la migration d'un volume important de données sans interruption de service. Pour y remédier, les transferts ont été segmentés et réalisés hors heures de production. De plus, pour garantir la fiabilité du cluster, j'ai réalisé des tests de <strong>failover</strong> (bascule forcée) afin de valider que le serveur passif reprenait les services instantanément sans déconnexion pour les utilisateurs finaux.</p>
+
+        <h2><span class="step-num">05.</span> Analyse et Compétences</h2>
+        <p>Ce projet m'a permis de maîtriser les concepts de haute disponibilité et de continuité de service (PCA). J'ai acquis une expertise sur l'environnement Synology DSM et sur l'intégration de solutions de stockage critiques dans un réseau d'entreprise complexe.</p>
+
+        <h2><span class="step-num">06.</span> Galerie du projet</h2>
+        <p class="zoom-info">(Cliquez sur une image pour l'agrandir)</p>
+        <div class="project-gallery">
+          <img src="Nas.png" onclick="zoomImage(this)" alt="Cluster Synology HA">
+          <img src="nas dossier partagé.png" onclick="zoomImage(this)" alt="Gestion des partages SMB">
+        </div>
+      </div>
+
+      <aside class="project-sidebar">
+        <div class="sidebar-item"><h4>⏱ Temps</h4><p>4 semaines</p></div>
+        <div class="sidebar-item">
+          <h4>🛠 Technologies</h4>
+          <p>
+            <span class="badge">Synology DSM</span> 
+            <span class="badge">SHA (High Avail.)</span> 
+            <span class="badge">Rsync</span>
+            <span class="badge">IPAM / SMTP</span>
+          </p>
+        </div>
+        <div class="sidebar-item">
+          <h4>🎓 Compétences</h4>
+          <p>Haute Disponibilité, Migration de données, Administration Stockage, Services Réseau</p>
+        </div>
+      </aside>
+    </div>
+  `,
+
+  nutanix: `
+    <h1 class="project-title">Migration d'Infrastructure Hyperconvergée (HCI)</h1>
+    <div class="project-wrapper">
+      <div class="main-text">
+        <h2><span class="step-num">01.</span> Présentation du projet</h2>
+        <p>Dans le cadre de l’évolution du Datacenter du Centre François Baclesse, j'ai participé à la migration de la plateforme de virtualisation VMware vers une solution hyperconvergée <strong>Nutanix</strong>. Réalisé en collaboration avec l'intégrateur <strong>Square</strong>, ce projet visait à améliorer la performance, la scalabilité et la résilience du système d'information hospitalier.</p>
+
+        <h2><span class="step-num">02.</span> But et Planification</h2>
+        <p>L’objectif était de déployer une nouvelle infrastructure HCI tout en assurant une transition progressive depuis VMware, sans interruption des services critiques. Le projet a été structuré autour de la <strong>redondance géographique</strong> :
+          <br>• <strong>Déploiement physique :</strong> Rackage et câblage de plus de dix nœuds Nutanix.
+          <br>• <strong>Sécurisation :</strong> Répartition des équipements sur deux salles de production distinctes.
+          <br>• <strong>Migration :</strong> Transfert flux tendu des machines virtuelles (VM) vers l'hyperviseur <strong>AHV</strong>.
+          <br>• <strong>Documentation :</strong> Cartographie complète de la nouvelle architecture.</p>
+
+        <h2><span class="step-num">03.</span> Réalisation technique</h2>
+        <ul>
+          <li><strong>Infrastructure Physique :</strong> Montage en baie des serveurs Nutanix, installation des switchs de distribution et mise en œuvre d'un câblage redondant et étiqueté.</li>
+          <li><strong>Virtualisation & AHV :</strong> Participation à la préparation de l'environnement Nutanix et migration progressive des VM depuis VMware vSphere vers Nutanix AHV.</li>
+          <li><strong>Maintien de la compatibilité :</strong> Suivi des systèmes existants et tests de bon fonctionnement post-migration pour garantir l'intégrité des services.</li>
+          <li><strong>Ingénierie Documentaire :</strong> Conception de schémas d'infrastructure détaillés représentant les baies informatiques et les connectiques réseau des deux salles.</li>
+        </ul>
+
+        <h2><span class="step-num">04.</span> Difficultés & Solutions</h2>
+        <p>Le défi majeur a été la migration de serveurs anciens dont la compatibilité avec l'environnement Nutanix était limitée. Pour sécuriser la production, nous avons adopté une stratégie de <strong>migration granulaire</strong>, traitant chaque VM complexe de manière isolée avec des phases de tests intensives. Cette approche a permis de limiter les risques d'indisponibilité pour les services hospitaliers.</p>
+
+        <h2><span class="step-num">05.</span> Analyse et Compétences</h2>
+        <p>Ce projet d'envergure m'a permis de comprendre les enjeux d'un datacenter moderne. J'ai acquis des compétences solides en installation physique de serveurs de haute densité et en gestion de projets de migration à grande échelle, tout en maîtrisant les outils de schématisation d'infrastructure.</p>
+
+        <h2><span class="step-num">06.</span> Galerie du projet</h2>
+        <p class="zoom-info">(Cliquez sur une image pour l'agrandir)</p>
+        <div class="project-gallery">
+          <img src="schéma NUTA infra.png" onclick="zoomImage(this)" alt="Schéma infrastructure Nutanix">
+          <img src="schéma infra switchs.png" onclick="zoomImage(this)" alt="Architecture Switchs">
+          <img src="vsphere.png" onclick="zoomImage(this)" alt="Console de migration VMware">
+        </div>
+      </div>
+
+      <aside class="project-sidebar">
+        <div class="sidebar-item"><h4>⏱ Temps</h4><p>Plusieurs mois</p></div>
+        <div class="sidebar-item">
+          <h4>🛠 Technologies</h4>
+          <p>
+            <span class="badge">Nutanix AHV</span> 
+            <span class="badge">VMware vSphere</span> 
+            <span class="badge">HCI</span>
+            <span class="badge">Switching</span>
+          </p>
+        </div>
+        <div class="sidebar-item">
+          <h4>🎓 Compétences</h4>
+          <p>Virtualisation, Rackage Datacenter, Migration Système, Schématisation réseau</p>
+        </div>
+      </aside>
+    </div>
+  `,
+
+  sites: `
+    <h1 class="project-title">Développement Web et Solutions Digitales</h1>
+    <div class="project-wrapper">
+      <div class="main-text">
+        <h2><span class="step-num">01.</span> Présentation du projet</h2>
+        <p>En parallèle de ma formation, j’ai réalisé plusieurs projets de création de sites internet pour des particuliers et des petites activités locales. Cette démarche consistait à concevoir des sites vitrines et des boutiques e-commerce pour dynamiser leur présence en ligne. Ces expériences m'ont permis de gérer le cycle de vie complet d'un produit logiciel, de l'analyse du besoin jusqu'à la mise en production.</p>
+
+        <h2><span class="step-num">02.</span> But et Planification</h2>
+        <p>L'objectif était de transformer des besoins métiers souvent flous en interfaces intuitives et performantes. Ma méthodologie de travail s'est structurée autour de plusieurs jalons clés :
+          <br>• <strong>Analyse & Maquettage :</strong> Recueil des attentes clients et définition de l'arborescence.
+          <br>• <strong>Développement :</strong> Programmation front-end et personnalisation de solutions CMS.
+          <br>• <strong>Tests & SEO :</strong> Optimisation du référencement et vérification de la compatibilité mobile (Responsive Design).
+          <br>• <strong>Livraison :</strong> Mise en ligne et accompagnement des clients pour la prise en main de l'outil.</p>
+
+        <h2><span class="step-num">03.</span> Réalisation technique</h2>
+        <ul>
+          <li><strong>Web Design :</strong> Structuration sémantique en <strong>HTML5</strong> et stylisation avancée en <strong>CSS3</strong> via Visual Studio Code.</li>
+          <li><strong>E-commerce :</strong> Configuration et personnalisation complète de boutiques <strong>Shopify</strong> (gestion du catalogue, flux de paiement, organisation du contenu).</li>
+          <li><strong>Logique & Programmation :</strong> Utilisation ponctuelle de <strong>Python</strong> et <strong>Java</strong> pour répondre à des besoins de traitement de données ou de logique applicative.</li>
+          <li><strong>DevOps :</strong> Gestion des noms de domaine, configuration DNS et déploiement des fichiers sur les serveurs d'hébergement.</li>
+        </ul>
+
+        <h2><span class="step-num">04.</span> Difficultés & Solutions</h2>
+        <p>La difficulté majeure résidait dans la gestion des attentes clients, ces derniers n'ayant pas toujours une vision technique claire de leur projet. Pour y remédier, j'ai instauré un dialogue régulier et pédagogique, utilisant des prototypes visuels pour valider chaque étape. Cette approche agile m'a permis d'ajuster le développement en temps réel tout en respectant les contraintes techniques.</p>
+
+        <h2><span class="step-num">05.</span> Analyse et Compétences</h2>
+        <p>Ces projets m'ont apporté une grande autonomie et une réelle aisance dans la communication avec des clients non techniques. J'ai développé une double compétence : la maîtrise technique du développement web et la vision stratégique de la gestion de projet client.</p>
+
+        <h2><span class="step-num">06.</span> Galerie du projet</h2>
+        <p class="zoom-info">(Cliquez sur une image pour l'agrandir)</p>
+        <div class="project-gallery">
+          <img src="Site 2.png" onclick="zoomImage(this)" alt="Aperçu site vitrine">
+          <img src="Site creer.png" onclick="zoomImage(this)" alt="Boutique e-commerce">
+        </div>
+      </div>
+
+      <aside class="project-sidebar">
+        <div class="sidebar-item"><h4>⏱ Temps</h4><p>Projets Freelance / Perso</p></div>
+        <div class="sidebar-item">
+          <h4>🛠 Technologies</h4>
+          <p>
+            <span class="badge">HTML / CSS</span> 
+            <span class="badge">Shopify</span> 
+            <span class="badge">Python</span>
+            <span class="badge">VS Code</span>
+          </p>
+        </div>
+        <div class="sidebar-item">
+          <h4>🎓 Compétences</h4>
+          <p>Développement Front-end, Relation Client, SEO, Gestion de Projet Agile</p>
+        </div>
+      </aside>
+    </div>
+  `,
+
+  wifi: `
+    <h1 class="project-title">Modernisation de l'Infrastructure Wi-Fi Cisco</h1>
+    <div class="project-wrapper">
+      <div class="main-text">
+        <h2><span class="step-num">01.</span> Présentation du projet</h2>
+        <p>Afin de résoudre des problèmes d'instabilité et de lenteur au Centre François Baclesse, j'ai participé au renouvellement de la couche d'accès sans-fil. Ce projet critique consistait à remplacer environ <strong>50 bornes obsolètes</strong> par des modèles <strong>Cisco</strong> de dernière génération, capables de supporter la densité croissante d'appareils connectés et les exigences du milieu hospitalier.</p>
+
+        <h2><span class="step-num">02.</span> But et Planification</h2>
+        <p>L’objectif principal était de garantir une couverture réseau optimale et un débit stable, essentiels pour l'accès aux dossiers patients informatisés. Le projet s'est déroulé selon les étapes suivantes :
+          <br>• <strong>Préparation :</strong> Mise à jour des firmwares et configuration des équipements en amont.
+          <br>• <strong>Déploiement :</strong> Remplacement progressif des anciennes bornes étage par étage.
+          <br>• <strong>Mobilité :</strong> Optimisation du <strong>roaming</strong> pour permettre aux terminaux (tablettes médicales, chariots informatisés) de basculer d'une borne à l'autre sans perte de connexion.
+          <br>• <strong>Validation :</strong> Tests de connectivité et de performance en conditions réelles.</p>
+
+        <h2><span class="step-num">03.</span> Réalisation technique</h2>
+        <ul>
+          <li><strong>Provisioning :</strong> Pré-configuration des bornes via <strong>Putty</strong> (interface console) pour assurer leur intégration immédiate au contrôleur Wi-Fi dès le branchement.</li>
+          <li><strong>Déploiement Physique :</strong> Installation des bornes, brassage sur switchs <strong>PoE (Power over Ethernet)</strong> et vérification de la bonne alimentation électrique via le réseau.</li>
+          <li><strong>Maintenance & Support :</strong> Diagnostic des problèmes de saturation et collaboration avec l’équipe réseau pour ajuster les canaux de fréquence.</li>
+          <li><strong>Audit Radio :</strong> Participation aux tests de couverture post-déploiement pour identifier et éliminer les zones d'ombre résiduelles.</li>
+        </ul>
+
+        <h2><span class="step-num">04.</span> Difficultés & Solutions</h2>
+        <p>Le défi majeur provenait de la saturation du réseau existant et des murs épais de l'établissement qui perturbaient le signal. En effectuant les mises à jour logicielles avant le déploiement et en optimisant l'emplacement physique des bornes, nous avons réussi à stabiliser la transition (handover) entre les points d'accès, garantissant ainsi une continuité de service pour le personnel médical en déplacement.</p>
+
+        <h2><span class="step-num">05.</span> Analyse et Compétences</h2>
+        <p>Ce projet m'a sensibilisé aux contraintes physiques des réseaux sans-fil en environnement professionnel. J'ai acquis des compétences concrètes en déploiement d'infrastructure Cisco, en gestion du PoE et en diagnostic de performance réseau à grande échelle.</p>
+
+        <h2><span class="step-num">06.</span> Galerie du projet</h2>
+        <p class="zoom-info">(Cliquez sur une image pour l'agrandir)</p>
+        <div class="project-gallery">
+          <img src="MAJ brones.jpeg" onclick="zoomImage(this)" alt="Installation physique des bornes">
+          <img src="Putty bornes wifi.png" onclick="zoomImage(this)" alt="Configuration console Putty">
+        </div>
+      </div>
+
+      <aside class="project-sidebar">
+        <div class="sidebar-item"><h4>⏱ Temps</h4><p>3 semaines</p></div>
+        <div class="sidebar-item">
+          <h4>🛠 Technologies</h4>
+          <p>
+            <span class="badge">Cisco Wireless</span> 
+            <span class="badge">PoE</span> 
+            <span class="badge">Putty</span>
+            <span class="badge">Mobilité / Roaming</span>
+          </p>
+        </div>
+        <div class="sidebar-item">
+          <h4>🎓 Compétences</h4>
+          <p>Déploiement Réseau, Configuration Cisco, Maintenance Infra, Diagnostic Radio</p>
+        </div>
+      </aside>
+    </div>
+  `,
 };
 
 
-function openProjet(id){
-  document.getElementById("projetOverlay").style.display="block";
-  document.getElementById("projetDetail").innerHTML = projets[id];
-  document.body.style.overflow="hidden";
+function openProjet(id) {
+  const overlay = document.getElementById("projetOverlay");
+  const detail = document.getElementById("projetDetail");
+  
+  if (projets[id]) {
+    detail.innerHTML = projets[id];
+    overlay.style.display = "block";
+    
+    // Bloque le scroll du site (body ET html)
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+    
+    // Remonte l'overlay en haut
+    overlay.scrollTop = 0;
+  }
 }
 
-function closeProjet(){
-  document.getElementById("projetOverlay").style.display="none";
-  document.body.style.overflow="auto";
+function closeProjet() {
+  const overlay = document.getElementById("projetOverlay");
+  overlay.style.display = "none";
+  
+  // Réactive le scroll partout
+  document.body.style.overflow = "auto";
+  document.documentElement.style.overflow = "auto";
+}
+
+function zoomImage(img) {
+  // Crée l'overlay de zoom
+  const zoomOverlay = document.createElement("div");
+  zoomOverlay.id = "zoomOverlay";
+  zoomOverlay.innerHTML = `
+    <span class="close-zoom" onclick="this.parentElement.remove()">✕</span>
+    <img src="${img.src}" class="zoomed-img">
+  `;
+  
+  // Fermer au clic n'importe où
+  zoomOverlay.onclick = function(e) {
+    if(e.target.id === "zoomOverlay") this.remove();
+  };
+  
+  document.body.appendChild(zoomOverlay);
 }
 
 </script>
@@ -1045,10 +1069,20 @@ function closeProjet(){
     </section>
 
     <!-- Section Tableau de Synthèse -->
-    <section id="tableau">
-      <h2>Tableau de Synthèse</h2>
-      <p>Tu pourras insérer ton tableau de compétences ici (image ou tableau HTML).</p>
-    </section>
+<section id="tableau">
+  <h2>Tableau de Synthèse</h2>
+  <p style="margin-bottom: 20px;">Retrouvez ci-dessous mon tableau de synthèse récapitulant les compétences acquises durant ma formation.</p>
+  
+  <div class="pdf-container">
+    <embed src="tableau-de-synthese.pdf" type="application/pdf" width="100%" height="600px" />
+  </div>
+
+  <div style="margin-top: 15px; text-align: center;">
+    <a href="tableau-de-synthese.pdf" target="_blank" class="btn-voir" style="text-decoration: none;">
+      Ouvrir en plein écran / Télécharger
+    </a>
+  </div>
+</section>
 
     <!-- Section Contact -->
     <section id="contact">
@@ -1072,8 +1106,21 @@ function closeProjet(){
         <a href="https://www.linkedin.com/in/alpha-diallo-59a27a305/" target="_blank" class="btn contact-btn">LinkedIn</a>
       </div>
     </section>
-
+    
     <footer>
       <p>© 2025 - Portfolio d’Alpha DIALLO | BTS SIO</p>
     </footer>
- 
+  </main>
+
+  <div id="projetOverlay">
+    <span class="close" onclick="closeProjet()">✕</span>
+    <div class="overlay-content">
+      <div id="projetDetail"></div>
+    </div>
+  </div>
+
+  <script>
+    // Tes fonctions JS ici
+  </script>
+</body>
+</html>
